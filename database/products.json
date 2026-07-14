@@ -1,0 +1,5994 @@
+[
+  {
+    "id": "21700blackcell",
+    "nama": "21700 BLACKCELL Battery",
+    "harga": 140000,
+    "stok": 2,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "21700vtc",
+    "nama": "21700 vtc6a 4000mah",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "backdoorddotaaio",
+    "nama": "A backdoor dot aio",
+    "harga": 60000,
+    "stok": 2,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "backdoorm200",
+    "nama": "a backdoor m200",
+    "harga": 60000,
+    "stok": 2,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "backdoorppandav2",
+    "nama": "A backdoor panda v2",
+    "harga": 60000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "backdoorpulsev5",
+    "nama": "A backdoor pulse v5",
+    "harga": 60000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "anrdacclone",
+    "nama": "an rda CLONE",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "andromedasalt30",
+    "nama": "andromeda salt 30ml",
+    "harga": 80000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "champions3core",
+    "nama": "AP champions exclusive coil",
+    "harga": 85000,
+    "stok": 2,
+    "kategori": "coil"
+  },
+  {
+    "id": "argusg3pod",
+    "nama": "argus g3 pod kit",
+    "harga": 240000,
+    "stok": 1,
+    "kategori": "device"
+  },
+  {
+    "id": "argusxt",
+    "nama": "ARGUS XT POD MOD",
+    "harga": 450000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "Avohero5760ml",
+    "nama": "Avo hero57 cocoa rocksalt 60ml",
+    "harga": 155000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "awtcharger",
+    "nama": "AWT charger 2slot",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "b80saio",
+    "nama": "b80s aio lostvape",
+    "harga": 600000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "backdoorb80",
+    "nama": "backdoor b80",
+    "harga": 60000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "pvr2000",
+    "nama": "battery PVR 2000MAH",
+    "harga": 50000,
+    "stok": 8,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "bearcotton",
+    "nama": "bear cotton",
+    "harga": 50000,
+    "stok": 7,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "ring24mm",
+    "nama": "beauty ring 24mm",
+    "harga": 60000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "berryfrost",
+    "nama": "berry frost 30ml pods friendly",
+    "harga": 95000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "berryhanasaltpods",
+    "nama": "berry hana 30ml salt pods",
+    "harga": 80000,
+    "stok": 5,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bigdragon",
+    "nama": "big dragon 30ml",
+    "harga": 60000,
+    "stok": 8,
+    "kategori": "liquid"
+  },
+  {
+    "id": "blackwoodvanilla60ml",
+    "nama": "blackwood vanilla custard tobaco 60ml",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "blksalt15",
+    "nama": "BLK Salt 15ml",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bolulapispandan60ml",
+    "nama": "bolu lapis talas 60",
+    "harga": 135000,
+    "stok": 5,
+    "kategori": "liquid"
+  },
+  {
+    "id": "braxsalt",
+    "nama": "brax salt knispig biscuit 15ml ahffak",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bulebolu",
+    "nama": "bule bolu 60ml emkay",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cairgguava30",
+    "nama": "cair guava 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "casebattery2",
+    "nama": "case battery isi 2",
+    "harga": 10000,
+    "stok": null,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "ctdragh80e60h40",
+    "nama": "catridge drag H80 E60 H40",
+    "harga": 55000,
+    "stok": 5,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctmantoaio",
+    "nama": "catridge MANTO aio",
+    "harga": 75000,
+    "stok": 2,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctubultra",
+    "nama": "catridge ub ultra centaurus q80",
+    "harga": 75000,
+    "stok": 3,
+    "kategori": "catridge"
+  },
+  {
+    "id": "e40ultra",
+    "nama": "centaurus e40 ultra pod",
+    "harga": 330000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "cerealisroyalpurpl",
+    "nama": "cerealis royale purple 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "CHAMPIONS-COIL",
+    "nama": "CHAMPIONS COIL",
+    "harga": 65000,
+    "stok": 37,
+    "kategori": "coil"
+  },
+  {
+    "id": "championsrba",
+    "nama": "champions RBA coil",
+    "harga": 60000,
+    "stok": 4,
+    "kategori": "coil"
+  },
+  {
+    "id": "champions-v2",
+    "nama": "champions v2",
+    "harga": 75000,
+    "stok": 6,
+    "kategori": "coil"
+  },
+  {
+    "id": "chargeupbattery2500",
+    "nama": "CHARGE UP Battery 2500 mah",
+    "harga": 85000,
+    "stok": 8,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "kdest2slot",
+    "nama": "charger bassen 2 slot",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "komodo",
+    "nama": "charger vapecell",
+    "harga": 75000,
+    "stok": 4,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "charger1slot",
+    "nama": "charger vapecell q1 1 slot",
+    "harga": 50000,
+    "stok": 2,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "CITADELRDA",
+    "nama": "CITADEL RDA",
+    "harga": 1100000,
+    "stok": 1,
+    "kategori": "device"
+  },
+  {
+    "id": "tppdm3",
+    "nama": "coil drag tpp",
+    "harga": 40000,
+    "stok": 6,
+    "kategori": "coil"
+  },
+  {
+    "id": "015drag",
+    "nama": "coil drag/vinci 0.15",
+    "harga": 40000,
+    "stok": 15,
+    "kategori": "coil"
+  },
+  {
+    "id": "blak",
+    "nama": "coil gear driptip 810 black",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "co",
+    "nama": "coil gk2 g2 caliburn",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "coil"
+  },
+  {
+    "id": "nightmarecoil",
+    "nama": "coil nightmare baby alien",
+    "harga": 40000,
+    "stok": 29,
+    "kategori": "coil"
+  },
+  {
+    "id": "ubultra0",
+    "nama": "coil ub ultra 0.15 CENTA Q80 POD",
+    "harga": 35000,
+    "stok": 21,
+    "kategori": "coil"
+  },
+  {
+    "id": "coil-vinci-03",
+    "nama": "coil vinci 0.3",
+    "harga": 40000,
+    "stok": 10,
+    "kategori": "coil"
+  },
+  {
+    "id": "cottonbaconprime",
+    "nama": "cotton bacon prime",
+    "harga": 75000,
+    "stok": 5,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "crackzbelgian",
+    "nama": "crackz ice belgian ice cream",
+    "harga": 135000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzicematcha60",
+    "nama": "crackz ice matcha 60ml",
+    "harga": 140000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzicepudding",
+    "nama": "crackz ice pudding 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackicepudding",
+    "nama": "crackz salt ice pudding 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamsiev460",
+    "nama": "creamsie v4 60ml chuzu",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamsiemidoriv5",
+    "nama": "creamsie v5 midori",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "ctaz3",
+    "nama": "ct a3s ak3 az3 0.8",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctarguspod",
+    "nama": "ct argus pod 0.7",
+    "harga": 40000,
+    "stok": 10,
+    "kategori": "catridge"
+  },
+  {
+    "id": "Ctglama",
+    "nama": "ct caliburn G lama",
+    "harga": 40000,
+    "stok": 1,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctdotpod",
+    "nama": "ct DOTPOD 0.8",
+    "harga": 50000,
+    "stok": 6,
+    "kategori": "catridge"
+  },
+  {
+    "id": "cteplusthelemaelite",
+    "nama": "CT E-PLUS THELEMA ELITE",
+    "harga": 45000,
+    "stok": 27,
+    "kategori": "liquid"
+  },
+  {
+    "id": "ctfoompodx",
+    "nama": "CT FOOM POD X",
+    "harga": 40000,
+    "stok": 9,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctfreemax",
+    "nama": "ct freemax pod",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctg2",
+    "nama": "ct G2 / GK2 caliburn",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctinfinity",
+    "nama": "ct infinity pod catridge",
+    "harga": 35000,
+    "stok": 9,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctjoiway",
+    "nama": "ct joiway",
+    "harga": 40000,
+    "stok": 3,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctlunix",
+    "nama": "ct lunix bisa pakai xlim",
+    "harga": 35000,
+    "stok": 0,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctnexlim",
+    "nama": "ct nexlim pod",
+    "harga": 45000,
+    "stok": 6,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctnixx",
+    "nama": "ct NIXX pod",
+    "harga": 45000,
+    "stok": 21,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctoneo",
+    "nama": "ct oneo 0.4",
+    "harga": 45000,
+    "stok": 6,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctoneo06",
+    "nama": "ct oneo 0.6",
+    "harga": 45000,
+    "stok": 9,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctoneo08",
+    "nama": "ct oneo 0.8",
+    "harga": 45000,
+    "stok": 7,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctxlimv3",
+    "nama": "ct oxva xlim pro v3",
+    "harga": 40000,
+    "stok": 65,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctoxvaxlimss",
+    "nama": "ct oxva xlim SS",
+    "harga": 45000,
+    "stok": 6,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctsonder",
+    "nama": "ct sonder",
+    "harga": 40000,
+    "stok": 10,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctt28tmax",
+    "nama": "ct t28 tmax 0.8",
+    "harga": 40000,
+    "stok": 26,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctursa06",
+    "nama": "ct ursa 0.6",
+    "harga": 40000,
+    "stok": 23,
+    "kategori": "catridge"
+  },
+  {
+    "id": "nano",
+    "nama": "ct ursa 0.8",
+    "harga": 40000,
+    "stok": 15,
+    "kategori": "catridge"
+  },
+  {
+    "id": "1",
+    "nama": "ct ursa v1",
+    "harga": 35000,
+    "stok": 9,
+    "kategori": "catridge"
+  },
+  {
+    "id": "CTvprime",
+    "nama": "ct VPRIME 0.2",
+    "harga": 50000,
+    "stok": 6,
+    "kategori": "catridge"
+  },
+  {
+    "id": "ctwaspnano",
+    "nama": "ct wasp nano pods",
+    "harga": 40000,
+    "stok": 8,
+    "kategori": "catridge"
+  },
+  {
+    "id": "xros",
+    "nama": "CT xros 0.8",
+    "harga": 40000,
+    "stok": 43,
+    "kategori": "catridge"
+  },
+  {
+    "id": "gearv2rta",
+    "nama": "D Gear v2 RTA single coil",
+    "harga": 250000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "drclone",
+    "nama": "dead rabbit clone RDA",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "DEAD-RABBIT-V2",
+    "nama": "DEAD RABBIT SE",
+    "harga": 250000,
+    "stok": 1,
+    "kategori": "device"
+  },
+  {
+    "id": "drsolo",
+    "nama": "dead rabbit solo rda",
+    "harga": 290000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "drv3",
+    "nama": "dead rabbit v3 RTA",
+    "harga": 365000,
+    "stok": 10,
+    "kategori": "device"
+  },
+  {
+    "id": "mecha",
+    "nama": "death coil mecha",
+    "harga": 50000,
+    "stok": 1,
+    "kategori": "coil"
+  },
+  {
+    "id": "death",
+    "nama": "death pelindung rda",
+    "harga": 35000,
+    "stok": 6,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "dewnanarillasalt",
+    "nama": "dewnanarilla salt pod frendly",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Donatellostrawberry",
+    "nama": "donatello vanilla strawberry 60ml",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "dotshellsxk",
+    "nama": "DOTSHEL RBA AIO SXK",
+    "harga": 400000,
+    "stok": 2,
+    "kategori": "device"
+  },
+  {
+    "id": "PANDA-MOD",
+    "nama": "DOVPO PANDA v2",
+    "harga": 470000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "argusp1",
+    "nama": "DP ARGUS P1 pods",
+    "harga": 200000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "dragh80s",
+    "nama": "drag h80s pod frebasee",
+    "harga": 300000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "komodosusu",
+    "nama": "driptip 810 N",
+    "harga": 40000,
+    "stok": 2,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "510k",
+    "nama": "driptip komodo 510 ss",
+    "harga": 50000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "driptipmonarkiaio",
+    "nama": "driptip monarki 510 AIO",
+    "harga": 75000,
+    "stok": 3,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "510",
+    "nama": "driptip reewape 510",
+    "harga": 30000,
+    "stok": 3,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "DRIPTIP810",
+    "nama": "DRIPTIP810",
+    "harga": 30000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "creamviii",
+    "nama": "EJM CREAM VIII STRAWBERRY 60ML",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "elprochessecake",
+    "nama": "elpro 60ml chessecakestraw",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "faq30",
+    "nama": "FAQ 30ML SALT",
+    "harga": 125000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "faqsalt15",
+    "nama": "FAQ SALT 15ml",
+    "harga": 50000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "fatcoil",
+    "nama": "fat coil",
+    "harga": 30000,
+    "stok": 0,
+    "kategori": "coil"
+  },
+  {
+    "id": "fatcpilmtl",
+    "nama": "fat coil mtl",
+    "harga": 35000,
+    "stok": 6,
+    "kategori": "coil"
+  },
+  {
+    "id": "FILTERNIXX",
+    "nama": "filter NIXX",
+    "harga": 40000,
+    "stok": 2,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "foomblackcurrant",
+    "nama": "foom blackcurrant lychee tea 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomblueberryice",
+    "nama": "foom blueberry icecream",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomchocolateice",
+    "nama": "foom chocolate ice cream",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "fantasyred",
+    "nama": "foom fantasy red 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomFrappuccino",
+    "nama": "foom Frappuccino 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foompurple",
+    "nama": "foom grape bubblegum 30ml salt",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomgreenkiwi",
+    "nama": "foom green kiwi 30ml salt",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomguavamango",
+    "nama": "foom guava mango 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomibiza",
+    "nama": "foom ibiza starfruit salt 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomicecapuccino",
+    "nama": "foom ice capuccino 30ml",
+    "harga": 110000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomicecola",
+    "nama": "foom ice cola salt 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomicedtea",
+    "nama": "foom iced tea 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pisangrakyatsalt",
+    "nama": "foom icy banana salt 30mg",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "purplespash",
+    "nama": "foom icy berry 30ml purple splash",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomhoneydew",
+    "nama": "foom icy honeydew 30ml",
+    "harga": 110000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "ys",
+    "nama": "foom icy mango salt 30mg",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomicymint",
+    "nama": "foom icy menthol 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foompineaplle",
+    "nama": "foom icy pineapple 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomicystrawberry",
+    "nama": "foom icy strawberry 30ml salt",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomwatermelon",
+    "nama": "foom icy watermelon 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foominhale30",
+    "nama": "foom inhale 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "-"
+  },
+  {
+    "id": "foomislandtime",
+    "nama": "foom island time salt 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "yellowgummy",
+    "nama": "foom mango bubblegum yellow gummy 30ml salt",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foommatchalatte",
+    "nama": "foom matcha latte 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foommildtobacco",
+    "nama": "foom mild tobacco 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foommixberry",
+    "nama": "foom mixberry ice cream 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foompineapplekiwi30",
+    "nama": "foom pineapple kiwi 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomredapple",
+    "nama": "foom red apple 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pinkgummy",
+    "nama": "foom strawberry bubblegum pink gummy 30ml salt",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomstrawberryic",
+    "nama": "foom strawberry icecream 30ml",
+    "harga": 110000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomlondon",
+    "nama": "foom taro ice cream london 30ml",
+    "harga": 110000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomtiramisu",
+    "nama": "foom tiramisu ice cream 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomttropicalime",
+    "nama": "foom tropical lime santorini salt 30",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foommaldives",
+    "nama": "foom tropical lychee maldives 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomtropicalpassionf",
+    "nama": "foom tropical passionfruit 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomgalapagos",
+    "nama": "foom tropical soursop galapagos sirsak 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomvanilla",
+    "nama": "foom vanilla ice cream 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomvietnamdripcofe",
+    "nama": "foom vietnam drip coffe",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomxwg",
+    "nama": "foom x pod kit",
+    "harga": 200000,
+    "stok": 2,
+    "kategori": "device"
+  },
+  {
+    "id": "foomelbaper",
+    "nama": "foom x prediksi EL BAPER 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomelmonto",
+    "nama": "foom x prediksi EL MONTO 30ML",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "freemax15ml",
+    "nama": "freemax bundling 15ml",
+    "harga": 150000,
+    "stok": null,
+    "kategori": "device"
+  },
+  {
+    "id": "freemaxjutapod",
+    "nama": "freemax juta pod 30ml liq",
+    "harga": 170000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "salt35K",
+    "nama": "fruity madnees 15ml",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "furlastrawberry",
+    "nama": "furla strawberry pudding 60ml",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "g80saio",
+    "nama": "G80s AIO Centaurus lost vape",
+    "harga": 600000,
+    "stok": 3,
+    "kategori": "device"
+  },
+  {
+    "id": "garskinm200",
+    "nama": "garskin m200",
+    "harga": 30000,
+    "stok": 5,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "garskinpulsemini",
+    "nama": "garskin pulse mini",
+    "harga": 30000,
+    "stok": 8,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "garskinpulsev5",
+    "nama": "garskin pulse v5",
+    "harga": 30000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "garskinr234",
+    "nama": "garskin r233/r234",
+    "harga": 30000,
+    "stok": 4,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "gentongcoil",
+    "nama": "gentong coil",
+    "harga": 35000,
+    "stok": 40,
+    "kategori": "coil"
+  },
+  {
+    "id": "gluv1",
+    "nama": "glu v1 60ml sirsak",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "glusalt",
+    "nama": "glu v1 salt",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "goestcleanerkecil",
+    "nama": "goest cleaner kecil",
+    "harga": 15000,
+    "stok": 5,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "golisicharger4slot",
+    "nama": "golisi charger 4slot",
+    "harga": 230000,
+    "stok": 5,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "GOON-RDA-GOLD-",
+    "nama": "GOON RDA 22mm GOLD",
+    "harga": 350000,
+    "stok": 2,
+    "kategori": "device"
+  },
+  {
+    "id": "grapeberry",
+    "nama": "grape berry 60ml",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "graperaspberry60",
+    "nama": "grape raspberry 60ml",
+    "harga": 135000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "grapeyogurt57",
+    "nama": "grape yogurt hero57 60ml",
+    "harga": 135000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "grooven",
+    "nama": "grooven 60ml strawberry vanilla",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "groovenpods",
+    "nama": "grooven pods frendly 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "grovenblueberrydonut",
+    "nama": "groven blueberry donut 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "GUNTING-LIPAT",
+    "nama": "GUNTING LIPAT",
+    "harga": 20000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "haku",
+    "nama": "haku venna sxk",
+    "harga": 230000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "hana15ml",
+    "nama": "hana 15 ml series",
+    "harga": 40000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hanydew",
+    "nama": "hanydew khalifa melon",
+    "harga": 130000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hkmilkymango60",
+    "nama": "HK MILKY MANGO 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "holyfiber",
+    "nama": "holy fiber cotton",
+    "harga": 45000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "holy-fiber-discovery",
+    "nama": "holy fiber discovery ( kecil)",
+    "harga": 15000,
+    "stok": 19,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "hotcigr99",
+    "nama": "hotcig r99 mod+rda",
+    "harga": 400000,
+    "stok": 2,
+    "kategori": "device"
+  },
+  {
+    "id": "arta",
+    "nama": "hotcig RST 212W",
+    "harga": 490000,
+    "stok": 3,
+    "kategori": "device"
+  },
+  {
+    "id": "Iteapediaapple",
+    "nama": "I TEA pedia apple tea",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Iteaberry",
+    "nama": "I TEA pedia BERRY",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "itealemontea",
+    "nama": "I TEA pedia lemon tea",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Iteapedialychee",
+    "nama": "I TEA pedia Lychee tea",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "iceberg60ml",
+    "nama": "ice berg 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "jinaksaltketanhitam",
+    "nama": "jinak salt ketam hitam 30ml",
+    "harga": 90000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "joiwaypods1",
+    "nama": "joiway pod 100k",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "-"
+  },
+  {
+    "id": "juicenationsalt15",
+    "nama": "juice nation salt 15ml",
+    "harga": 45000,
+    "stok": 5,
+    "kategori": "liquid"
+  },
+  {
+    "id": "juta15icetea",
+    "nama": "juta 15 ice tea salt",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "juta15cocopandan",
+    "nama": "juta 15ml cocopandan",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "juta15grape",
+    "nama": "juta 15ml grape salt",
+    "harga": 40000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "juta15mango",
+    "nama": "juta 15ml mango salt",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "juta15taro",
+    "nama": "juta 15ml taro",
+    "harga": 40000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "juta30mlpro",
+    "nama": "juta 30ml salt PROMO",
+    "harga": 60000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "juta15kopi",
+    "nama": "juta15 kopi dingin tipis",
+    "harga": 40000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "wickerbeastkapas",
+    "nama": "kapas wicker beast",
+    "harga": 70000,
+    "stok": 12,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "karet-pod",
+    "nama": "karet pod",
+    "harga": 5000,
+    "stok": 36,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "kendokenceng",
+    "nama": "kendo cotton",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "ketanjinak",
+    "nama": "ketan jinak 60ml",
+    "harga": 130000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "king-reserve-",
+    "nama": "king reserve 60ml",
+    "harga": 175000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "komodo810ijo",
+    "nama": "komodo 810 green hijau",
+    "harga": 40000,
+    "stok": 2,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "komodo810pink",
+    "nama": "komodo 810 pink",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "clear",
+    "nama": "komodo driptip 810 CLEAR",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "redd",
+    "nama": "komodo driptip 810 RED",
+    "harga": 40000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "ungu",
+    "nama": "komodo driptip 810 UNGU",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "kopijinak60",
+    "nama": "kopi jinak 60ml",
+    "harga": 130000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "kopi-jiwa-salt",
+    "nama": "kopi jiwa salt",
+    "harga": 85000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "keju",
+    "nama": "krusty crepes keju",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crepessaltv1",
+    "nama": "krusty crepes salt series",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lanyardtalikecil",
+    "nama": "lanyard custom",
+    "harga": 25000,
+    "stok": 3,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "Lanyard-madang",
+    "nama": "Lanyard madang",
+    "harga": 20000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "lcvbluecrepes60",
+    "nama": "Lcv Blue Crepes 60ml",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lcvrotieropa60",
+    "nama": "lcv Roti Eropa 60ml",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lcvsaltbluecrepes",
+    "nama": "LCV SALT blueberrycrepes",
+    "harga": 80000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lcvsaltrotieropa",
+    "nama": "LCV SALT roti eropa 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lcvsaltrotisisir",
+    "nama": "LCV SALT rotisisir 30ml",
+    "harga": 80000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lcvsaltstrawberry",
+    "nama": "LCV SALT strawberry stick 30ml",
+    "harga": 80000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lcvstrawberrystick",
+    "nama": "Lcv strawberry stick 60ml",
+    "harga": 100000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "legalizedblack",
+    "nama": "legalized black coil dual",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "coil"
+  },
+  {
+    "id": "redleg",
+    "nama": "legalized RED (NEW)",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "coil"
+  },
+  {
+    "id": "alacartebutterbreak",
+    "nama": "LF ALA Carte butter break 60ml",
+    "harga": 155000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "ala-carte-hitam",
+    "nama": "LF ala carte hitam nic 6",
+    "harga": 155000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "alacartemerah",
+    "nama": "LF ALA CARTE merah 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "alulacheesse",
+    "nama": "LF ALULA 60Ml creamchesse",
+    "harga": 160000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "americanmango",
+    "nama": "LF american FRUity GRAPE smothies 60 ml",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "AmericanFruitymango6",
+    "nama": "LF American Fruity mango 60ml",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "americanmelon",
+    "nama": "LF american fruity melon 60ml",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "americanfruitystraw6",
+    "nama": "LF american fruity strawberry 60ml",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "badfellas60",
+    "nama": "LF BAD FELLAS 60ML",
+    "harga": 150000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "badfellasvanilla60",
+    "nama": "LF BAD FELLAS vanilla almond 60ml",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bananaliciusn3",
+    "nama": "LF banana licious nic 3",
+    "harga": 155000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "banana-licious-nic-6",
+    "nama": "LF banana licious nic 6",
+    "harga": 155000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "baperstuff60ml",
+    "nama": "LF BAPER stuff matcha 60ml",
+    "harga": 120000,
+    "stok": 5,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequblackcurrant",
+    "nama": "LF bequ blackcurrant 60ml",
+    "harga": 135000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequgrapeberry60",
+    "nama": "LF BEQU grape berry 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequhoneydew",
+    "nama": "LF BEQU HONEYDEW 60ML",
+    "harga": 135000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "BEQUlightstrawberry6",
+    "nama": "LF BEQU light strawberry honeydew 60ml",
+    "harga": 135000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequmangopeach",
+    "nama": "LF BEQU Mango Peach 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequpome60",
+    "nama": "LF BEQU pomegranate 60ml",
+    "harga": 135000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "BEQUstrawberry",
+    "nama": "LF BEQU strawberry 60ml",
+    "harga": 135000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequwatermelon",
+    "nama": "LF BEQU watermelon 60ml",
+    "harga": 135000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "blondiesbanana",
+    "nama": "LF blondies banana 60ml",
+    "harga": 150000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "blondiesblueberry",
+    "nama": "LF blondies blueberry 60ml",
+    "harga": 150000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "blondiescheese",
+    "nama": "LF Blondies chesse 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bobon60ml",
+    "nama": "LF BOBON 60ml popcorn",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bobonv2raisinchesse",
+    "nama": "LF BOBON V2 Raisin cheese 60ml",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bolustrawberry60",
+    "nama": "LF BOLU strawberry 60",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bondan60",
+    "nama": "LF BONDAN 60ML",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cpediagelato60",
+    "nama": "LF C PEDIA GELATO 60ML",
+    "harga": 115000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cpediamangosticky60",
+    "nama": "LF c pedia mango sticky 60ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cakeladybanana60",
+    "nama": "LF Cake Lady banana 60ml",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cakeladystrawberry",
+    "nama": "LF cake lady strawberry 60ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cendoljinaknew",
+    "nama": "LF CENDOL jinak CUKAI 2024 NIC6&9",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "chessejinak",
+    "nama": "LF chesse cake jinak 60ml",
+    "harga": 130000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "chickendinnerflurry6",
+    "nama": "LF CHICken Dinner flurry shake OREO 60",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "chickendinnerstraw",
+    "nama": "LF CHICKEN dinner strawberry oatmeal 60",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "coconarilla60",
+    "nama": "LF COCONARILLA 60ML",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackz60whitechoco",
+    "nama": "LF CRACKZ 60ML white chocolate",
+    "harga": 140000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzbanana60",
+    "nama": "LF CRACKZ Banana softcake 60",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackziceblueberry60",
+    "nama": "LF CRACKZ ICE blueberry ice cream 60ml",
+    "harga": 140000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "CRACKZICEcookies",
+    "nama": "LF CRACKZ ICE cookies ice cream 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzicehoneydew60",
+    "nama": "LF CRACKZ ice honeydew 60ml",
+    "harga": 140000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzicestrawberry",
+    "nama": "LF CRACKZ ICE STRAWBERRY",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzicetaro60",
+    "nama": "LF crackz ice taro 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamraisinv160ori",
+    "nama": "LF CREAM RAISIN V1 60ML ori",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creaminal60",
+    "nama": "LF creaminal 60ml strawberry pudding",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creaminalmango",
+    "nama": "LF creaminal mango pudding 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creaminalpastry",
+    "nama": "LF creaminal pastry series 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creaminalicecream",
+    "nama": "LF creaminal strawberry icecream 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamsielexis60ml",
+    "nama": "LF CREAMSIE LEXIS 60ml",
+    "harga": 155000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Creamsiematcha",
+    "nama": "LF Creamsie matcha 60ml",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamsiemoonberry",
+    "nama": "LF CREAMSIE MONBERRY 60ML",
+    "harga": 155000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamsiev4",
+    "nama": "LF Creamsie v4 whimberry 60ml",
+    "harga": 155000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamsie60",
+    "nama": "LF creamsie whimsea 60ml",
+    "harga": 155000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cremecrime60",
+    "nama": "LF CREME & CRIME 60ml butter chesse vanilla",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "darkluna60",
+    "nama": "LF DARK LUNA 60ML",
+    "harga": 160000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "DEWNANARILLAice60",
+    "nama": "LF DEWNANARILLA ICE 60ML",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "dogerjinak60",
+    "nama": "LF DOGER jinak 60ml",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "DONATELLO",
+    "nama": "LF DONATELLO strawbery cereal 60ml",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "ebmorningbabe",
+    "nama": "LF EB morning BABE 60ML",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "EBmmorningbabe60",
+    "nama": "LF EB morning BERRY 60ML",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "ebmorningcheese60",
+    "nama": "LF EB morning CHEESE 60ML",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "eb-v2-nic-3",
+    "nama": "LF EB v2 morning citrus 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "emkaypopcorn",
+    "nama": "LF emkay POPcorn 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "emkaytiramisu60",
+    "nama": "LF EMKAY TIRAMISU CREAM 60",
+    "harga": 160000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "freak60",
+    "nama": "LF FREAK BLUEMOCHESSE 60ML",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Friendsenemies",
+    "nama": "LF friends enemies 60ml",
+    "harga": 155000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "friendsfamily60",
+    "nama": "LF Friends family apel",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "fuel60ml",
+    "nama": "LF FUEL tutti frutty 60ml",
+    "harga": 140000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "furlabanana60",
+    "nama": "LF FURLA BANANA 60ML",
+    "harga": 150000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "FURLAmango60ml",
+    "nama": "LF FURLA MANGO 60ML",
+    "harga": 155000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "furlav3",
+    "nama": "LF furla v3 melon 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "furlav4blueberry",
+    "nama": "LF FURLA V4 blueberry 60ml",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "gluzone",
+    "nama": "LF glu zone 60ml bubblegum",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "grapecurrant",
+    "nama": "LF GRAPE CURRANT 60ML",
+    "harga": 135000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "grapekiller",
+    "nama": "LF grape killer 60ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "grapemango60ml",
+    "nama": "LF Grape mango 60ml hero57",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "grapewatermelon60",
+    "nama": "LF GRAPE WATERMELON 60ML",
+    "harga": 145000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "herolunagrahamcheese",
+    "nama": "LF HERO57 LUNA GRAHAM CHEESSECAKE 60ML",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hirobanana60",
+    "nama": "LF HIRO Banana 60ml",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Hirostrawberry60",
+    "nama": "LF HIRO strawberry 60ml",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "HKicecoklat60",
+    "nama": "LF HK ICE COKLAT 60",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hkicecreamcaramel",
+    "nama": "LF HK ice cream caramel 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hkmatcha60",
+    "nama": "LF HK Ice cream MATCHA 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "HKicestrawberry60ml",
+    "nama": "LF HK ICE STRAWBERRY 60ML",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hKV1COKLAT",
+    "nama": "LF HK V1 60ml coklat",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "HKv2",
+    "nama": "LF HK v2 white 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "HKv3",
+    "nama": "LF HK v3 strawberry 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "HKgold",
+    "nama": "LF HK v4 GOLD 60ML",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hompimpa60ml",
+    "nama": "LF HOMPIMPA 60ML caramel butter",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "iceladyblack",
+    "nama": "LF ice lady black purple 60ml blackcurrant",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "iceladybubblegum",
+    "nama": "LF ice lady bubblegum 60ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "iceladymango",
+    "nama": "LF ice lady mango 60ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pediabanana60",
+    "nama": "LF ice pedia banana freebase 60ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "vanillascreed",
+    "nama": "LF Inverse VANILLA'S CREED",
+    "harga": 155000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "jackpot60",
+    "nama": "LF JACKPOT hero57 60ml melon milk softcake",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "jakarjinak",
+    "nama": "LF JAKAR jinak 60ml",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "jrstrawcinamons",
+    "nama": "LF JR straw cinamons roll",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "dcartelori60",
+    "nama": "LF LAKLEY D CARTEL ORI 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lattmjolk60ml",
+    "nama": "LF LATT MJOLK 60ML",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunaputih60ml",
+    "nama": "LF LUNA putih baked cheesecake 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunaricecreambanana6",
+    "nama": "LF LUNAR banana ice cream60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarbiscoff60ml",
+    "nama": "LF LUNAR biscoff 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarbbiscuitvanilla",
+    "nama": "LF Lunar Biscuit Vanilla 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarblueberry60ml",
+    "nama": "LF Lunar blueberry ice cream 60ml",
+    "harga": 160000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarbblueberryjam60",
+    "nama": "LF Lunar blueberry jam 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarhexohm",
+    "nama": "LF lunar hexohm strawberry chesse cake 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarmatcha",
+    "nama": "LF LUNAR ice cream matcha 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarmochivanilla",
+    "nama": "LF LUNAR MOCHI VANILLA 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarstrawberryice",
+    "nama": "LF Lunar strawberry ice cream 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarvanilla",
+    "nama": "LF Lunar vanilla classic",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "MAKNA60SEASALT",
+    "nama": "LF MAKNA 60 SEA SALT CARAMEL 60",
+    "harga": 140000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "makna60ml",
+    "nama": "LF MAKNA 60ML BERRY DOUGHT",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "makna60strawberry",
+    "nama": "LF MAKNA 60ML Strawberry milk",
+    "harga": 140000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "maknaiceberry",
+    "nama": "LF MAKNA ice berry dought 60",
+    "harga": 140000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "maknaicecaramellatte",
+    "nama": "LF MAKNA ice caramel latte 60",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "maknaicetaro60",
+    "nama": "LF MAKNA ICE taro 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "maknamatcha60ml",
+    "nama": "LF MAKNA Matcha 60ml",
+    "harga": 140000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "maknataro60",
+    "nama": "LF MAKNA taro milk cheese 60ml",
+    "harga": 140000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "markmade60",
+    "nama": "LF markmade 60ml",
+    "harga": 155000,
+    "stok": 7,
+    "kategori": "-"
+  },
+  {
+    "id": "milojinak60",
+    "nama": "LF millo jinak 60ml",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "mirulychee60",
+    "nama": "LF MIRU ice LYCHEE 60ML",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "mirumango60",
+    "nama": "LF MIRU ice mango 60ml",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "miruredapple",
+    "nama": "LF MIRU ice red apple 60ml",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "mirustraw60",
+    "nama": "LF MIRU ice strawberry 60ml",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "moonrabbit60",
+    "nama": "LF Moon rabbit 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "morningbeng60",
+    "nama": "LF Morning beng 60ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "morninghoney60",
+    "nama": "LF morning honey cereal 60ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "morningplex60",
+    "nama": "LF morning plex 60ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "muffinstrawberry60",
+    "nama": "LF MUFFIN STRAWBERRY 60ML vaperstuff",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "muffinv260ml",
+    "nama": "LF muffin v2 blueberry 60ml",
+    "harga": 130000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "muffinv460ml",
+    "nama": "LF Muffin v4 irish cream 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "-"
+  },
+  {
+    "id": "nikmat",
+    "nama": "LF nikmat v1 original 60ml",
+    "harga": 150000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "nikmatv2",
+    "nama": "LF nikmat v2 blueberry 60ml",
+    "harga": 150000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "nikmatv4blackberry60",
+    "nama": "LF NIkmat v4 blackberry pie 60ml",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "nychero60",
+    "nama": "LF NYC 60ML hero57",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "odv1-nic3",
+    "nama": "LF oat drips v1 original nic 3",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "odv2n6",
+    "nama": "LF oat dripS v2 mung bean nic 6",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "odv3nic3",
+    "nama": "LF oat drips v3 banana 60ML",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "odv5",
+    "nama": "LF oat drips v5 chocolate",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "odv5salt",
+    "nama": "LF oat drips v5 salt",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "odv7freebase",
+    "nama": "LF oatdrips v7 raisin 60ml",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "oramav2",
+    "nama": "LF Orama juice v2 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Oramav1",
+    "nama": "LF Orama v1 kaya toast 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "oramav4melon",
+    "nama": "LF ORAMA V4 YUBARI MELON 60ML",
+    "harga": 155000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "oramav5straw60",
+    "nama": "LF ORAMA v5 strawberry chessecake 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Paradewaanggur60",
+    "nama": "LF Paradewa anggur 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "manggahera60ml",
+    "nama": "LF paradewa mangga hera 60ml v2",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "paradewapisangstraw",
+    "nama": "LF PAradewa pisang 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "paradewastrawberry60",
+    "nama": "LF Paradewa strawberry 60ml",
+    "harga": 140000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Paradewavanilla60",
+    "nama": "LF Paradewa vanilla 60ml",
+    "harga": 140000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "paradewawatermelon60",
+    "nama": "LF Paradewa watermelon60ml",
+    "harga": 140000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "parecu60ml",
+    "nama": "LF PARECU 60ml mango ice cream",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "peanutbutterbanana",
+    "nama": "LF pbj Peanut butter banana 60ml",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "PBJsstrawberry60",
+    "nama": "LF PBJ Strawberry 60ml",
+    "harga": 150000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "permenkaki60",
+    "nama": "LF permen kaki 60ml",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pisangijo60",
+    "nama": "LF Pisang Ijo 60ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "poppinpop60ml",
+    "nama": "LF POPP IN POP 60ml caramel popcorn",
+    "harga": 160000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "r99pistachio",
+    "nama": "LF R99 pistachio 60ml",
+    "harga": 155000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "rex57blueberrytoast6",
+    "nama": "LF REX57 BLUEBERRY toast 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "rillatoast60ml",
+    "nama": "LF RILLA TOAST 60ML",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "robackblu",
+    "nama": "LF ROBACK BLUEBERRY 60ML",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "roback60straw",
+    "nama": "LF ROBACK strawberry 60",
+    "harga": 155000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "robacktaro60",
+    "nama": "LF ROBACK taro 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "slayblueberry60",
+    "nama": "LF SLAY BLUEBERRY 60ml",
+    "harga": 145000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "slaystrawberry60",
+    "nama": "LF SLAY strawberry 60ml",
+    "harga": 145000,
+    "stok": 1,
+    "kategori": "-"
+  },
+  {
+    "id": "soonixbanana60",
+    "nama": "LF Soonix banana smoothie 60",
+    "harga": 140000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "soonixgreenapple",
+    "nama": "LF Soonix green apple",
+    "harga": 140000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lfsoonixmagenta",
+    "nama": "LF SOONIX magenta squash sirsak 60ml",
+    "harga": 140000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Sonixpurple",
+    "nama": "LF Soonix purple berry",
+    "harga": 140000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Soonixstrawberry60",
+    "nama": "LF Soonix strawberry smoothie 60",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "starliq60Donut",
+    "nama": "LF star liquid 60ml Donuts strawberry 60ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "strawberrycustard60",
+    "nama": "LF strawberry custard deadpoll 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "strawinpop60",
+    "nama": "LF STRAWIN POP 60ml",
+    "harga": 160000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "suicidebunny60",
+    "nama": "LF SUICIDE BUNNY 60ML",
+    "harga": 190000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "SUPERSONIXblueberry",
+    "nama": "LF SUPERSONIX blueberry 60ml",
+    "harga": 150000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "supersonixvanilla60",
+    "nama": "LF SUPERSONIX vanilla 60ml",
+    "harga": 150000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "susujinak60ml",
+    "nama": "LF SUSU JINAK 60ML",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "suxpurple",
+    "nama": "LF SUX purple chevy 60ml",
+    "harga": 160000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "suxstrawberry",
+    "nama": "LF SUX strawberry 60ml",
+    "harga": 160000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "sux60ml",
+    "nama": "LF SUX vanila 60ML",
+    "harga": 160000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tansu60ml",
+    "nama": "LF TANSU ketan susu ibukota",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tantrumz60nanas",
+    "nama": "LF tantrumz 60ML nanas fancy",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tarojinak60ml",
+    "nama": "LF TARO JINAK 60ML",
+    "harga": 130000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "thelazyblueberry",
+    "nama": "LF The Lazy blueberry 60ml",
+    "harga": 155000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "thelazystraw60",
+    "nama": "LF THE Lazy strawyberry 60ml",
+    "harga": 155000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "ticketstrawberry",
+    "nama": "LF TICKET strawberry 60ml",
+    "harga": 130000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "toastinpop60",
+    "nama": "LF Toastin pop 60ml",
+    "harga": 160000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tokyobuncoffe60",
+    "nama": "LF TOKYO BUN COFFE 60ML",
+    "harga": 160000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tokyomilkchesse",
+    "nama": "LF Tokyo milk chesse 60ml",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tokyotoaststraw",
+    "nama": "LF TOKYO TOAST STRAWBERRY 60",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tokyowafercheese",
+    "nama": "LF tokyo wafer cheese 60ml",
+    "harga": 160000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tokyowafervanilla",
+    "nama": "LF TOKYO wafer VAniLa 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "TOKYOmanbanana",
+    "nama": "LF TOKYOman banana 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tokyomanbananacrispy",
+    "nama": "LF TOKYOMAN banana crispyNUT 60ML",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tokyomanv2blue",
+    "nama": "LF Tokyoman blueberry banana 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tokyomantiramisu",
+    "nama": "LF TOKYOMAN tiramisu 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "secretbanana60",
+    "nama": "LF TRILOGY banana ROLLCAKE 60ml",
+    "harga": 160000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "trilogymangosticky60",
+    "nama": "LF TRILOGY Mango sticky 60",
+    "harga": 160000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "trilogyturamisu",
+    "nama": "LF TRILOGY TIramisu 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "secretubecake60",
+    "nama": "LF TRILOGY ube cake 60ml",
+    "harga": 160000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "trmlcremecake60",
+    "nama": "LF TRML liquid creme cake 60ml",
+    "harga": 160000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "UNAbanana60ml",
+    "nama": "LF UNA banana 60ml",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Unastrawberry60",
+    "nama": "LF UNA strawberry cheesecake 60ml",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "whaledreambanana60",
+    "nama": "LF WD BANANA omelette cake 60ML",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "whaledreamblueberry6",
+    "nama": "LF WD BLUEBERRY omelette cake 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "wdfantasygoya60",
+    "nama": "LF WD Fantasy 60 GOYAberry",
+    "harga": 150000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "WDFANTASY60ml",
+    "nama": "LF WD FANTASY 60ml boomberry soda",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "whaledream60",
+    "nama": "LF WD strawberry OMELETTE CAke 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "wellnut60",
+    "nama": "LF WELLNUT 60ML",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "X1creampie60ml",
+    "nama": "LF X1 boston creampie 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "x2milkshake60ml",
+    "nama": "LF X2 biscoff milkshake 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "yeloblueberry60",
+    "nama": "LF YELO blueberry 60ml",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "YELOmatcha60",
+    "nama": "LF YELO MATCHA 60ml",
+    "harga": 100000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "yelostrawyogurt",
+    "nama": "LF YELO Strawberry Yogurt 60ml",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "yelotaro60",
+    "nama": "LF YELO Taro 60ml",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "alacartesalt30",
+    "nama": "LS ala carte salt 30ml hitam",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "alulasaltcreamcheese",
+    "nama": "LS Alula salt creamchesse 30ml",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "americanfruitybanana",
+    "nama": "LS american fruity salt 30ml",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "applehana30",
+    "nama": "LS APPLE HANA 30ml salt",
+    "harga": 80000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "applesalt",
+    "nama": "LS apple killer salt",
+    "harga": 95000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "badfellassaltv1",
+    "nama": "LS BAD FELLAS V1 pods friendly",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bananalisiussalt",
+    "nama": "LS banana licious salt",
+    "harga": 125000,
+    "stok": 8,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bananamoon15",
+    "nama": "Ls banana moon 15ml",
+    "harga": 50000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequcolasalt",
+    "nama": "LS BEQU COLA SALT 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequbananasalt",
+    "nama": "LS BEQU salt banana 30ml",
+    "harga": 110000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "BEQUsaltgrapeberry",
+    "nama": "LS BEQU salt grapeberry 30ml",
+    "harga": 110000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequsalthoneydew",
+    "nama": "LS bequ salt honeydew 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequsaltmango",
+    "nama": "LS bequ salt mango 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequpeachsalt30",
+    "nama": "LS BEQU salt peach 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequpinapplesalt30",
+    "nama": "LS BEQU salt pineapple 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequsaltpome",
+    "nama": "LS BEQU salt pomegranate 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequsaltstrawberry",
+    "nama": "LS BEQU salt strawberry 30ml",
+    "harga": 110000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bequsaltwatermelo",
+    "nama": "LS bequ salt watermelon 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "blueberryhana30ml",
+    "nama": "LS blueberry hana 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "blunanarillaicesalt",
+    "nama": "LS BLUnanarilla ice salt 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "blunanarillasalt",
+    "nama": "LS blunanarilla salt 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bolulapispandan30ml",
+    "nama": "LS Bolu lapis talas salt 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitaapel",
+    "nama": "LS buaqita apel",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitabanana30",
+    "nama": "LS buaqita banana salt 30ML",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitablackcurrant",
+    "nama": "LS buaqita blackcurrant 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitabubblegum",
+    "nama": "LS BUAqita bubblegum series 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitagrapesalt30",
+    "nama": "LS buaqita grape salt 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitaguava30",
+    "nama": "Ls buaqita guava 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitahoneydew",
+    "nama": "LS buaqita honeydew 30ml",
+    "harga": 110000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitamango",
+    "nama": "LS buaqita mango",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitapinaple",
+    "nama": "LS Buaqita pinaple 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitasoursop30ml",
+    "nama": "LS buaqita soursop sirsak 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitastrawberry",
+    "nama": "LS buaqita strawberry",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitawatermelon",
+    "nama": "LS buaqita watermelon",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitayaqultmango",
+    "nama": "LS BUAQITA yaqult mango",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "buaqitayaqultori",
+    "nama": "LS BUAQITA YAQULT ORIGINAL",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bulebolusalt",
+    "nama": "LS Bulebolu salt 30ml",
+    "harga": 125000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cmilkypediabanana30",
+    "nama": "LS C milky pedia banana 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cmilkypediastrawberr",
+    "nama": "LS C Milky pedia strawberry 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cpediachocobanana30",
+    "nama": "LS C pedia choco banana 30",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamypediagellato",
+    "nama": "LS C pedia GELLATO 30ML",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamypediamangostic",
+    "nama": "LS C pedia MANGO STICKY 30ML",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamypediablueber",
+    "nama": "LS C pedia salt blueberry jam 30",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cpediaatrawbanana30",
+    "nama": "LS C PEDIA strawberry banana 30",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamypediastrawberr",
+    "nama": "LS C pedia strawberry chessecake30",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cpediastrawicecream3",
+    "nama": "LS C PEDIA STRAWBERRY Ice cream30",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Cpediastrawjam30",
+    "nama": "LS C PEDIA strawberry jam 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pediatiramisu",
+    "nama": "LS C pedia tiramisu 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pediatokyobanana",
+    "nama": "LS C pedia tokyo banana salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "-"
+  },
+  {
+    "id": "cairgrapesalt30",
+    "nama": "LS CAIR grape salt 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cairhoneydewsalt30ml",
+    "nama": "LS CAIR honeydew salt 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cairlattestraw",
+    "nama": "LS cair latte strawberry 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cairlycheesalt30",
+    "nama": "LS CAIR lychee salt 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cairmango30",
+    "nama": "LS CAIR mango salt 30ml",
+    "harga": 80000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cairsoursopsalt",
+    "nama": "LS cair soursop salt 30ml sirsak",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "cairwatermelonsalt30",
+    "nama": "LS CAIR watermelon salt 30",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "chzbblueberrysalt30",
+    "nama": "LS CHZ blueberry salt 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "chzsstrawberrysalt",
+    "nama": "LS CHZ strawberry salt 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "chznanarillasalt",
+    "nama": "LS chznanarilla 30ml salt",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackz15blueberry",
+    "nama": "LS CRACKZ 15ml blueberry ice cream",
+    "harga": 50000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackz15cookies",
+    "nama": "LS CRACKZ 15ml cookies oreo",
+    "harga": 50000,
+    "stok": 5,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackz15honeydew",
+    "nama": "LS CRACKZ 15ml Honeydew",
+    "harga": 50000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackz15matcha",
+    "nama": "LS CRACKZ 15ml Matcha",
+    "harga": 50000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackz15pudding",
+    "nama": "LS CRACKZ 15ml pudding",
+    "harga": 50000,
+    "stok": 5,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackz15straw",
+    "nama": "LS crackz 15ml strawberry",
+    "harga": 50000,
+    "stok": 6,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackz15taro",
+    "nama": "LS CRACKZ 15ml taro",
+    "harga": 50000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzifblackcurrant",
+    "nama": "LS Crackz I F blackcurrant 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzifapple30salt",
+    "nama": "LS CRACKZ IF apple salt 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzifbublegrape",
+    "nama": "LS Crackz IF bublegum grape 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzifhoneydew30",
+    "nama": "LS Crackz IF honeydew 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackziflychee",
+    "nama": "LS crackz if lychee 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzifmango30",
+    "nama": "LS Crackz IF mango 30ml",
+    "harga": 110000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzifmuscat30ml",
+    "nama": "LS Crackz IF muscat 30ml",
+    "harga": 110000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzifstrawsalt",
+    "nama": "LS CRACKZ IF strawberry 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzsaltwhitechoco",
+    "nama": "LS CRACKZ salt 30ml white chocolate",
+    "harga": 110000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzbananasoft",
+    "nama": "LS CRACKZ salt banana soft",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzsaltcookies30",
+    "nama": "LS crackz salt cookies 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "-"
+  },
+  {
+    "id": "crackzblueberrysalt3",
+    "nama": "LS crackz salt ice blueberry 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzsalttaroice30m",
+    "nama": "LS Crackz salt ice taro 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "crackzsaltstrawber",
+    "nama": "LS crackz salt strawberry ice cream 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamraisinsaltv130",
+    "nama": "LS CREAM RAISIN salt v1 merah 30ml original",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamraisinsaltv230",
+    "nama": "LS CREAM RAISIN salt v2 mochi salt 30ml",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creamraisinbananapod",
+    "nama": "LS cream raisin v3 pods BANANA 30ML",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creaminal15choco",
+    "nama": "LS Creaminal 15ml chocobanana",
+    "harga": 50000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creaminal15matcha",
+    "nama": "LS Creaminal 15ml matcha",
+    "harga": 50000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creaminal15straw",
+    "nama": "LS Creaminal 15ml strawberry",
+    "harga": 50000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "CREAminalbblueberrya",
+    "nama": "LS CREAminal blueberry salt 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "-"
+  },
+  {
+    "id": "creaminalsaltbanana",
+    "nama": "LS Creaminal salt banana",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "creaminalsalt30ml",
+    "nama": "LS creaminal strawberry salt 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "110000",
+    "nama": "LS dex skylar BUBLEGUM 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "donatellosalt",
+    "nama": "LS donatello salt 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "LSEBsaltbabe",
+    "nama": "LS EB salt babe",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "EBsalthoneydew",
+    "nama": "LS EB salt honeydew 30ml",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "coffemelsalt40mg",
+    "nama": "LS EMKAY COFFEMELL salt 40mg",
+    "harga": 150000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "faithberrytobacco",
+    "nama": "LS faith 15ml berry tobacco",
+    "harga": 40000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "faithpoundcake",
+    "nama": "LS Faith 15ml POUNDCAKE",
+    "harga": 40000,
+    "stok": 8,
+    "kategori": "liquid"
+  },
+  {
+    "id": "faithregal",
+    "nama": "LS Faith 15ml regal",
+    "harga": 40000,
+    "stok": 10,
+    "kategori": "liquid"
+  },
+  {
+    "id": "faithvanillatobacco",
+    "nama": "LS Faith 15ml vanilla tobacco",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "flurryhana",
+    "nama": "LS FLurry hana 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomcornicecream",
+    "nama": "LS FOOM corn ice cream 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomgemini",
+    "nama": "LS foom gemini low cool mango cranberry30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomgreengrapesoda",
+    "nama": "LS FOOM Green grape SODA",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomicyblackcurrant",
+    "nama": "LS FOOM icy blackcurrant",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomicygrape",
+    "nama": "LS foom icy grape 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomlychee",
+    "nama": "LS foom icy lychee 30ml salt",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomlemontea",
+    "nama": "LS Foom lemon tea 30ml",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomlycheetea",
+    "nama": "LS Foom lychee tea 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomsmootieshoneydew",
+    "nama": "LS Foom smoothies Honeydew 30",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomsmootiesstraw",
+    "nama": "LS Foom smoothies strawberry",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomtangymilk",
+    "nama": "LS FOOM Tangy milk 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "foomtequillasunsine",
+    "nama": "LS foom tequilla sunsine 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bahamas",
+    "nama": "LS foom tropical orange bahamas",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "friendsenemiessalt30",
+    "nama": "LS friend enemies salt 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "fruitsiesalt30ml",
+    "nama": "LS FRUITSIE salt 30ml VEM",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "fuelsalt",
+    "nama": "LS FUEL salt 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "furlabananasalt",
+    "nama": "LS Furla banana 30ml salt",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "furlasaltmelon",
+    "nama": "LS furla melon salt 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "furlablueberrysalt",
+    "nama": "LS furla salt blueberry 30ml",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "furlasaltmango",
+    "nama": "LS Furla salt mango 30ml",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "furlasaltv1",
+    "nama": "LS furla salt strawberry 30ml",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "glemshareit",
+    "nama": "LS GLEM SHARE IT 30ML",
+    "harga": 70000,
+    "stok": 9,
+    "kategori": "liquid"
+  },
+  {
+    "id": "goatsalt30ml",
+    "nama": "LS goat salt SPRITE 30ML",
+    "harga": 65000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "goldenbutterv1salt",
+    "nama": "LS golden butter salt v1 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "goldencornsalt",
+    "nama": "LS GOLDEN cord salt 30ml jasuke",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "grapesalt",
+    "nama": "LS grape killer salt",
+    "harga": 95000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hanabublegrape",
+    "nama": "LS hana bublegum grape 30ml",
+    "harga": 80000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hanabublegummango",
+    "nama": "LS hana bublegum mango 30ml",
+    "harga": 80000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hanabublegumstraw",
+    "nama": "LS hana bublegum strawberry 30",
+    "harga": 80000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hanapuddingblueberry",
+    "nama": "LS hana pudding blueberry",
+    "harga": 80000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hanapudingstraw",
+    "nama": "LS hana pudding strawberry",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "happyKrunchv1pods",
+    "nama": "LS happy krunch v1 coklat salt",
+    "harga": 105000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "happykrunchsalt",
+    "nama": "LS happy krunch v2 salt coklat putih",
+    "harga": 105000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "happykrunchv3salt",
+    "nama": "LS happy krunch v3 salt strawberry",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hk15mango",
+    "nama": "LS HK 15ML milky mango",
+    "harga": 50000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hk15melon",
+    "nama": "LS HK 15ml milky melon",
+    "harga": 50000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hk15pinaple",
+    "nama": "LS HK 15ml milky pinaple",
+    "harga": 50000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "hk15strawberry",
+    "nama": "LS HK 15ml milky strawberry",
+    "harga": 50000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bubblepediablackcurr",
+    "nama": "LS I BUBBLE pedia blackcurrant salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bubblepediablueber",
+    "nama": "LS I BUBBLE pedia blueberry salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bubblepediagrape",
+    "nama": "LS I BUBBLE pedia grape salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bubblepediahoneydew",
+    "nama": "LS I BUBBLE pedia honeydew salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bubblepedialycheesal",
+    "nama": "LS I BUBBLE pedia lychee salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bubblepediamango",
+    "nama": "LS I BUBBLE pedia mango salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "bubblepediastraw",
+    "nama": "LS I BUBBLE pedia strawberry salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pediaicecreambanana",
+    "nama": "LS I CREAM pedia banana salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pediachocoicecream",
+    "nama": "LS I CREAM pedia chocohazelnut 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pediaicecreammango",
+    "nama": "LS I CREAM pedia mango salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pediaicecreamstrawbe",
+    "nama": "LS I CREAM pedia strawberry salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "kulinerpediaesbuah",
+    "nama": "LS I KULINER pedia es buah salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "kulinerpediaketan",
+    "nama": "LS I KULINER pedia es ketan hitam",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "kulinerpediaesteler",
+    "nama": "LS I KULINER pedia es teler",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "milkshakepediabanana",
+    "nama": "LS I MILKSHAKE pedia banana salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "milkshakechocolate",
+    "nama": "LS I MILKSHAKE pedia chocolate salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "milkshakepediahoneyd",
+    "nama": "LS I MILKSHAKE pedia honeydew salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "milkshakepediastra",
+    "nama": "LS I MILKSHAKE pedia strawberry",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "milkshakepediavanill",
+    "nama": "LS I MILKSHAKE pedia vanilla salt",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icepediaapple",
+    "nama": "LS I pedia apple 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icepediabanana",
+    "nama": "LS I pedia banana 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icepediablackcurrant",
+    "nama": "LS I pedia blackcurrant 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icepediablueberry30",
+    "nama": "LS I pedia blueberry salt 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icepediagrape",
+    "nama": "LS I pedia grape 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icepediahoneydew",
+    "nama": "LS I pedia honeydew 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icepediamangosalt30",
+    "nama": "LS I pedia mango salt 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icepediamungbeansalt",
+    "nama": "LS I pedia mungbean salt 30ml",
+    "harga": 85000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icepediastrawberry",
+    "nama": "LS I pedia strawberry sweet 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icepediatarosalt30",
+    "nama": "LS I pedia taro salt 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icepediawatermelon",
+    "nama": "LS I pedia watermelon 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icelandgrape",
+    "nama": "LS ice land grape",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icelandguava",
+    "nama": "LS Ice land guava 30ml salt",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icelandmango",
+    "nama": "LS ice land mango",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icelandmelon",
+    "nama": "LS ice land melon salt",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icelandstrawberry",
+    "nama": "LS ice land strawberry",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Icelandwatermelon",
+    "nama": "LS ice land watermelon salt",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icewrld",
+    "nama": "LS ICE WRLD salt 30ML",
+    "harga": 75000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icelandapple",
+    "nama": "LS iceland apple 30ml",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "icelandorange30ml",
+    "nama": "LS iceland orange 30ml",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "jinakescendolsalt",
+    "nama": "LS Jinak salt es cendol 30ml",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "jinakesDOGER",
+    "nama": "LS Jinak salt es DOGER 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "jinakesTARO",
+    "nama": "LS JINAK salt es TARO 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "jinaksaltstrawberry",
+    "nama": "LS Jinak salt ice STRAWBERRY 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "juta15banana",
+    "nama": "LS juta 15 banana salt",
+    "harga": 40000,
+    "stok": 8,
+    "kategori": "-"
+  },
+  {
+    "id": "juta15mlcola",
+    "nama": "LS juta freeze cola 15ml",
+    "harga": 40000,
+    "stok": 8,
+    "kategori": "liquid"
+  },
+  {
+    "id": "juta15mlstrawberry",
+    "nama": "LS juta strawberry ice cream 15ml",
+    "harga": 40000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "juta15lychee",
+    "nama": "LS JUTA15 lychee",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "juta15redapple",
+    "nama": "LS JUTA15 red apple 15ml",
+    "harga": 40000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "kazesalt30ml",
+    "nama": "LS kaze salt 30ml emkay",
+    "harga": 130000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "kingreservesalt",
+    "nama": "LS king reserve salt 30ml",
+    "harga": 145000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "KRSPYalmond",
+    "nama": "LS KRSPY almond salt 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "-"
+  },
+  {
+    "id": "KRSPYstrawberry",
+    "nama": "LS KRSPY strawberry salt",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lolitasalt15",
+    "nama": "LS Lolita bolu susu salt 15ml",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarblueberrysalt",
+    "nama": "LS Lunar blueberry SALT 30ML",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarsalt",
+    "nama": "LS lunar hexohm salt strawberry chesse",
+    "harga": 125000,
+    "stok": 5,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarjapanesesssalt",
+    "nama": "LS lunar ice cream matcha japanese 30ml",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarbananasalt",
+    "nama": "LS Lunar ice cream SALT banana30ML",
+    "harga": 120000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarsstrawberrysalt",
+    "nama": "LS Lunar strawberry ice cream salt 30ml",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "maknasaltstrawberry",
+    "nama": "LS MAKNA salt 30ml strawberry salt",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "maknaberrysalt",
+    "nama": "LS makna salt berry dought 30ml",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "maknasaltcaramel",
+    "nama": "LS MAKNA SALT caramel latte 30ml",
+    "harga": 120000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "mango-killer-salt",
+    "nama": "LS mango killer salt nic",
+    "harga": 95000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "markmadesalt30",
+    "nama": "LS markmade salt series 30",
+    "harga": 110000,
+    "stok": 10,
+    "kategori": "liquid"
+  },
+  {
+    "id": "movinotsolazy",
+    "nama": "LS MOVI not so lazy salt",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "muffinsalt",
+    "nama": "LS muffin n sex v1 salt nic",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "nafasejm",
+    "nama": "LS NAFAS EJM Salt 30ml",
+    "harga": 90000,
+    "stok": 7,
+    "kategori": "liquid"
+  },
+  {
+    "id": "nikmatsalt",
+    "nama": "LS nikmat v1 salt 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "nikmatv2salt",
+    "nama": "LS nikmat v2 salt 30ml",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "nooxgrapeapple",
+    "nama": "LS NOOX grape apple",
+    "harga": 85000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "nooxguavamango",
+    "nama": "LS NOOX guava mango 30ml",
+    "harga": 85000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "nooxlycheeblack",
+    "nama": "LS NOOX lychee blackcurrant",
+    "harga": 85000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "nooxmangoraspberry",
+    "nama": "LS NOOX mango raspberry",
+    "harga": 85000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "nooxstrawwater",
+    "nama": "LS NOOX strawberry watermelon",
+    "harga": 85000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "ODV1SALT",
+    "nama": "LS oat drips v1 SALT",
+    "harga": 110000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "odv2salt",
+    "nama": "LS oat drips v2 salt",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "odv3sALT",
+    "nama": "LS oat dripS v3 SALT banana",
+    "harga": 110000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "odv7salt",
+    "nama": "LS oat drips v7 raisin pods 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "oramabananasalt",
+    "nama": "LS orama banana salt 30ml",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "oramav1salt",
+    "nama": "LS orama v1 pods frendly 30ml",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "oramav2salt",
+    "nama": "LS orama v2 pods friendly 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "oramav3pods",
+    "nama": "LS Orama v3 raisin pods frendly",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "oramav4melonsalt",
+    "nama": "LS orama v4 melon salt 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "oxpassionguava",
+    "nama": "LS Oxpassion guava 30ml",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "paradewaanggursalt",
+    "nama": "LS Paradewa anggur salt 30ml",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "paradewaapplesalt",
+    "nama": "LS paradewa apple salt",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "paradewalychee",
+    "nama": "LS Paradewa lychee 30ml",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "manggahera",
+    "nama": "LS paradewa MANGGA HERA SALT",
+    "harga": 125000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "paradewavanillasalt",
+    "nama": "LS paradewa vanilla salt 30ml",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "paradewawatermelon",
+    "nama": "LS Paradewa watermelon 30ml",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "parecusalt",
+    "nama": "LS PARECU SALT 30ML",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "parfaitsalt",
+    "nama": "LS parfait drjuice",
+    "harga": 80000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pbjsaltbanana",
+    "nama": "LS PBJ salt banana 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "PBJsaltstrawberry",
+    "nama": "LS PBJ salt strawberry 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pinaplehana30",
+    "nama": "LS Pinaple hana 30ml",
+    "harga": 80000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "powsalt30ml",
+    "nama": "LS POW salt 30ml",
+    "harga": 75000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "secrettiramisusalt",
+    "nama": "LS secret tiramisu salt 30ml",
+    "harga": 130000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "slaybblueberrysalt",
+    "nama": "LS SLAY Blueberry salt 30ml",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "slaystrawsalt",
+    "nama": "LS Slay strawberry jam 30ml salt",
+    "harga": 100000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "smithsundaysalt30",
+    "nama": "LS SMITH sunday ice cream salt 30ml",
+    "harga": 60000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "snack15ml",
+    "nama": "LS snack salt 15ml",
+    "harga": 45000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "snackv1pod",
+    "nama": "LS snack v1 strawberry salt 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "SOONIXberrysalt",
+    "nama": "LS SOONIX berry salt 30ml",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "soonixsaltgreenapple",
+    "nama": "LS soonix salt green apple 30ml",
+    "harga": 120000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "soonixsaltmagenta",
+    "nama": "LS Soonix salt MAgenta 30ml",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "soursophana30ml",
+    "nama": "LS Soursop hana 30ml salt",
+    "harga": 80000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "strawberrymoon15",
+    "nama": "Ls strawberry moon 15ml",
+    "harga": 40000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "strawinpopsalt",
+    "nama": "LS STRAWIN pop salt 30ml",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takisbananakiwi",
+    "nama": "LS TAKIS banana kiwi",
+    "harga": 70000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takisblacklychee",
+    "nama": "LS TAKIS blackcurrant lychee 30ml",
+    "harga": 70000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takisblueberrykiwi",
+    "nama": "LS TAKIS blueberry kiwi 30ml",
+    "harga": 70000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takispoetercoklat",
+    "nama": "LS TAKIS es poeter COKLAT",
+    "harga": 70000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takispoeterjagung",
+    "nama": "LS TAKIS es poeter JAGUNG",
+    "harga": 70000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takispoeterketan",
+    "nama": "LS TAKIS es poeter ketan hitam",
+    "harga": 70000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takispoeterstraw",
+    "nama": "LS TAKIS es poeter STRAW",
+    "harga": 70000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takisgrapeapple",
+    "nama": "LS TAKIS grape apple 30ml",
+    "harga": 70000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takisguavastraw",
+    "nama": "LS TAKIS guava straw 30ml",
+    "harga": 70000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takislecipir",
+    "nama": "LS TAKIS LECI pir 30ml",
+    "harga": 70000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takismangopeach",
+    "nama": "LS TAKIS mango peach 30ml",
+    "harga": 70000,
+    "stok": 8,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takismarkisakelapa",
+    "nama": "LS TAKIS Markisa kelapa",
+    "harga": 70000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takismelonblackberry",
+    "nama": "LS Takis melon blackberry 30ml",
+    "harga": 70000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takispinaplemango",
+    "nama": "LS TAKIS pinapple mango",
+    "harga": 70000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "Takissarianggur",
+    "nama": "LS TAKIS sari ANGGUR",
+    "harga": 70000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takissarijambu",
+    "nama": "LS TAKIS sari JAMBU",
+    "harga": 70000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takissarijeruk",
+    "nama": "LS TAKIS sari JERUK",
+    "harga": 70000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takissarimangga",
+    "nama": "LS TAKIS sari MANGGA",
+    "harga": 70000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "takisstrawwater",
+    "nama": "LS TAKIS straw watermelon",
+    "harga": 70000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tarohana",
+    "nama": "LS taro hana 30ml",
+    "harga": 80000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "teahanasalt",
+    "nama": "LS tea hana 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tickethoneydewsalt",
+    "nama": "LS TICKET HONEYDEW 30ML SALT",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "ticketsaltgrape",
+    "nama": "LS TICKETS SALT GRAPE 30ml",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "ticketssaltLYCHE",
+    "nama": "LS TICKETS SALT LYCHE 30ML",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "toastinpopsalt",
+    "nama": "LS Toatsin pop SALT 30ML",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tokyocrepessalt",
+    "nama": "LS TOKYO CREPES 30ml",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "tokyotoast30ml",
+    "nama": "LS TOKYO toast SALTNIC 30ML",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "secretbananasalt",
+    "nama": "LS trilogy banana salt 30ml",
+    "harga": 130000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "trilogysaltmango",
+    "nama": "LS Trilogy salt mango sticky",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "secretstrawberrysalt",
+    "nama": "LS TRILOGY strawberry salt 30ml",
+    "harga": 130000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "unabananasalt",
+    "nama": "LS una banana salt 30ml",
+    "harga": 115000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "unastrawberrysalt",
+    "nama": "LS una strawberry salt 30ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "volus",
+    "nama": "LS Volus 15ml",
+    "harga": 45000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "wdfantasygoya",
+    "nama": "LS WD Fantasy GOYAberry salt 30ml",
+    "harga": 120000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "WDFANTASYsalt30",
+    "nama": "LS WD fantasy salt 30ml boomberry",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "-"
+  },
+  {
+    "id": "yellowgrape15",
+    "nama": "LS YELLOW grape 15ml",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "yellowmango15",
+    "nama": "LS YELLOW mango 15ml",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "-"
+  },
+  {
+    "id": "yellowwatermelon15",
+    "nama": "LS YELLOW watermelon 15ml",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "ylobun30ml",
+    "nama": "LS YLOBUN 30ML salt",
+    "harga": 120000,
+    "stok": 5,
+    "kategori": "liquid"
+  },
+  {
+    "id": "zoomangopuddingsalt",
+    "nama": "LS ZOO mango pudding 30ml salt",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lunarvanillasalt",
+    "nama": "lunar vanilla salt 30ml",
+    "harga": 120000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "lycheehannasalt",
+    "nama": "lychee hana salt 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "mac",
+    "nama": "mac salt 15ml",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "magicdrjuice",
+    "nama": "magic dr juice 30ml",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "maknasalttaro",
+    "nama": "makna salt taro 30ml",
+    "harga": 120000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "makni",
+    "nama": "makni coil",
+    "harga": 40000,
+    "stok": 3,
+    "kategori": "coil"
+  },
+  {
+    "id": "malomoblue",
+    "nama": "malomo coil blue dual core",
+    "harga": 70000,
+    "stok": 0,
+    "kategori": "coil"
+  },
+  {
+    "id": "mangohana60",
+    "nama": "mango hana 60ml frebase",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "mangohana",
+    "nama": "mango hana salt",
+    "harga": 80000,
+    "stok": 6,
+    "kategori": "liquid"
+  },
+  {
+    "id": "mangokhalifa",
+    "nama": "mango khalifa n3",
+    "harga": 130000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "matchahana30ml",
+    "nama": "matcha hana 30ml salt",
+    "harga": 80000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "maui",
+    "nama": "MAUI coil",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "coil"
+  },
+  {
+    "id": "coilmaster",
+    "nama": "mecha coil master",
+    "harga": 140000,
+    "stok": 2,
+    "kategori": "device"
+  },
+  {
+    "id": "minustwomango60",
+    "nama": "minus two mango 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "minustwostrawberry",
+    "nama": "minus two strawberry 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "minustwoyogurt60ml",
+    "nama": "minus two yogurt 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "molicelp28A",
+    "nama": "molicel P28A battery",
+    "harga": 120000,
+    "stok": 6,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "monstercotton",
+    "nama": "monster cotton kapas",
+    "harga": 50000,
+    "stok": 15,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "mosnterminikapas",
+    "nama": "monster kecil kapas",
+    "harga": 10000,
+    "stok": 37,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "moodsesteh",
+    "nama": "moods es teh gopek 30ml",
+    "harga": 90000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "moodsblackcurrant",
+    "nama": "moods salt blackcurrant 30ml",
+    "harga": 90000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "moodsgrape",
+    "nama": "moods salt grape 30ml",
+    "harga": 90000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "moodsguava",
+    "nama": "moods salt guava 30ml",
+    "harga": 90000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "moodshoneydew",
+    "nama": "moods salt honeydew 30ml",
+    "harga": 90000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "moodslychee",
+    "nama": "moods salt lychee 30ml",
+    "harga": 90000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "moodsmango",
+    "nama": "moods salt mango 30ml",
+    "harga": 90000,
+    "stok": 1,
+    "kategori": "-"
+  },
+  {
+    "id": "moodsorange",
+    "nama": "moods salt orange 30ml",
+    "harga": 90000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "moodsstrawberry",
+    "nama": "moods salt strawberry 30ml",
+    "harga": 90000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "moodswatermelon",
+    "nama": "moods salt watermelon 30ml",
+    "harga": 90000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "moodsyackoolmango",
+    "nama": "moods yackool mango 30ml",
+    "harga": 90000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "moodsyackoolstraw",
+    "nama": "moods yackool strawberry",
+    "harga": 90000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "morningastro60ml",
+    "nama": "morning astro 60ml",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "sojumangosalt",
+    "nama": "munchies soju mango salt pod frendly",
+    "harga": 95000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "sojusaltblueberry",
+    "nama": "munchies SOJU SALT grape 30ml",
+    "harga": 95000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "sojusaltstrw",
+    "nama": "munchies SOJU salt STRAWBERRY 30ml",
+    "harga": 95000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "nitrousrdta",
+    "nama": "nitrous rdta 24mm with tank",
+    "harga": 430000,
+    "stok": 1,
+    "kategori": "device"
+  },
+  {
+    "id": "nitrousrrtaclone",
+    "nama": "nitrous rta clone (tabung)",
+    "harga": 200000,
+    "stok": 1,
+    "kategori": "device"
+  },
+  {
+    "id": "nitrousshiny",
+    "nama": "nitrous shiny Ss edition",
+    "harga": 340000,
+    "stok": 1,
+    "kategori": "device"
+  },
+  {
+    "id": "nixxpodbundling",
+    "nama": "nixx pod bundling",
+    "harga": 475000,
+    "stok": 2,
+    "kategori": "device"
+  },
+  {
+    "id": "nuttyrillasalt",
+    "nama": "nutty rilla pod salt 30ml",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "-"
+  },
+  {
+    "id": "nuttyrilla",
+    "nama": "nuttyrilla coklat kacang cream 60ml",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "min",
+    "nama": "obeng Min",
+    "harga": 20000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "T",
+    "nama": "obeng T",
+    "harga": 5000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "ONEOpod",
+    "nama": "ONEO POD oxva",
+    "harga": 260000,
+    "stok": 2,
+    "kategori": "device"
+  },
+  {
+    "id": "ONGKOS-PASANG",
+    "nama": "ongkos pasang/ RECOIL PREBUILD",
+    "harga": 5000,
+    "stok": null,
+    "kategori": "add on"
+  },
+  {
+    "id": "oramav360",
+    "nama": "orama v3 raisin toast 60ml",
+    "harga": 155000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "oramav430ml",
+    "nama": "orama v4 nic9 30ml",
+    "harga": 85000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "oxbardispo",
+    "nama": "oxbar dispo pod",
+    "harga": 70000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "nexlimpod",
+    "nama": "oxva NEXLIM POD KIT",
+    "harga": 360000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "xlimgopodkit",
+    "nama": "oxva xlim GO pod liq",
+    "harga": 200000,
+    "stok": 0,
+    "kategori": "-"
+  },
+  {
+    "id": "XLIMSQPROTREASURE",
+    "nama": "OXVA XLIM SQ PRO LIMITED 330",
+    "harga": 330000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "pedia15bananaicecrea",
+    "nama": "pedia 15 banana ice cream",
+    "harga": 40000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pedia15blackcurrant",
+    "nama": "pedia 15 blackcurrant",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pedia15blueberry",
+    "nama": "pedia 15 blueberry salt",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pedia15grape",
+    "nama": "pedia 15 grape salt",
+    "harga": 40000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pedia15honeydewmilk",
+    "nama": "pedia 15 honeydew milkshake",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pedia15lychee",
+    "nama": "pedia 15 lychee salt",
+    "harga": 40000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pedia15mango",
+    "nama": "pedia 15 mango salt",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pedia15strawberry",
+    "nama": "pedia 15 strawberry",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pedia15strawberrymil",
+    "nama": "pedia 15 strawberry milkshake",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pedia15taroicecream",
+    "nama": "pedia 15 taro icecream",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pedia15vanilla",
+    "nama": "pedia 15 vanilla milkshake",
+    "harga": 40000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "pinsetlancip",
+    "nama": "pinset lancip",
+    "harga": 15000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "xlimpro3",
+    "nama": "pod oxva xlim pro 3",
+    "harga": 325000,
+    "stok": 4,
+    "kategori": "device"
+  },
+  {
+    "id": "xlimpro2treasure",
+    "nama": "pod xlim pro2 treasure edition",
+    "harga": 330000,
+    "stok": 2,
+    "kategori": "device"
+  },
+  {
+    "id": "pouchodb",
+    "nama": "Pouch ODB murah",
+    "harga": 50000,
+    "stok": 7,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "pulseaiominivrk",
+    "nama": "pulse aio mini kit",
+    "harga": 450000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "red",
+    "nama": "R150S LIMITED EDITION MERAH",
+    "harga": 590000,
+    "stok": 1,
+    "kategori": "device"
+  },
+  {
+    "id": "r234cyber",
+    "nama": "R234 cyber",
+    "harga": 520000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "rbamantoaio",
+    "nama": "rba manto aio",
+    "harga": 85000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "RBK-aegist-boost",
+    "nama": "RBK aegist boost",
+    "harga": 50000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "RECOIL-BIASA-RDA",
+    "nama": "RECOIL BIASA RDA",
+    "harga": 10000,
+    "stok": 0,
+    "kategori": "add on"
+  },
+  {
+    "id": "RELOAD-S-BLACK",
+    "nama": "RELOAD S BLACK",
+    "harga": 900000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "clonereloads",
+    "nama": "reload s clone SXK",
+    "harga": 260000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "RELOAD-S-SS",
+    "nama": "RELOAD S SS",
+    "harga": 900000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "retryrba",
+    "nama": "retry coil RBA",
+    "harga": 30000,
+    "stok": 8,
+    "kategori": "coil"
+  },
+  {
+    "id": "rotisisir",
+    "nama": "ROTI sisir 60ml lcv",
+    "harga": 100000,
+    "stok": 4,
+    "kategori": "liquid"
+  },
+  {
+    "id": "vapjoy",
+    "nama": "sikat besi / coil brust vapjoy",
+    "harga": 15000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "r233sleeve",
+    "nama": "sleeve r233",
+    "harga": 130000,
+    "stok": 2,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "sleever234",
+    "nama": "sleeve r234",
+    "harga": 130000,
+    "stok": 2,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "sonderpodkit",
+    "nama": "sonder pod kit + likudi",
+    "harga": 180000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "sop-buah",
+    "nama": "sop buah 60ml",
+    "harga": 145000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "sopbuah2024",
+    "nama": "sop buah nic3 60 cukai 2024",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "sopbuahsalt",
+    "nama": "sop buah salt emkay",
+    "harga": 120000,
+    "stok": 1,
+    "kategori": "liquid"
+  },
+  {
+    "id": "stadz60",
+    "nama": "stadz 60ml caramel popcorn",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "stalkd2dual",
+    "nama": "stalk D2 rda dual",
+    "harga": 310000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "stalkrdasingle",
+    "nama": "STALK RDA SINGLE",
+    "harga": 290000,
+    "stok": 1,
+    "kategori": "device"
+  },
+  {
+    "id": "star60cheesestraw",
+    "nama": "star 60ml cheesecake strawberry",
+    "harga": 110000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "starliq",
+    "nama": "star liq salt 15ml",
+    "harga": 50000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "suxmoonbery",
+    "nama": "sux moonberry 60ml",
+    "harga": 160000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "dtatrml",
+    "nama": "T gear DTA TRML",
+    "harga": 70000,
+    "stok": 13,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "t28nonbundling",
+    "nama": "t28 non bundling",
+    "harga": 170000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "t28trmlpod",
+    "nama": "T28 trml pod kit with liquid",
+    "harga": 200000,
+    "stok": 3,
+    "kategori": "device"
+  },
+  {
+    "id": "thelazyvanila",
+    "nama": "the lazy vanilla 60ml",
+    "harga": 155000,
+    "stok": 3,
+    "kategori": "liquid"
+  },
+  {
+    "id": "thelemaaurapod",
+    "nama": "thelema aura pod kit",
+    "harga": 200000,
+    "stok": 1,
+    "kategori": "device"
+  },
+  {
+    "id": "thelemaelit",
+    "nama": "thelema elit 40w",
+    "harga": 280000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "elitlimited",
+    "nama": "thelema ELIT LIMITED 300K",
+    "harga": 300000,
+    "stok": 1,
+    "kategori": "device"
+  },
+  {
+    "id": "thelemaelitart",
+    "nama": "thelema elite art 40w",
+    "harga": 240000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "thelema",
+    "nama": "thelema quest mod",
+    "harga": 500000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "togtiptixtip",
+    "nama": "tog tip tixtip",
+    "harga": 70000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "tokyowafertaro",
+    "nama": "tokyo wafer taro 60ml",
+    "harga": 160000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "coilmastertoolkit",
+    "nama": "toolkit coil master v2 mini",
+    "harga": 170000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "toolkitmini",
+    "nama": "toolkit mini",
+    "harga": 90000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "trilogisaltube",
+    "nama": "trilogi salt ube cake 30ml",
+    "harga": 130000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "secretstrawberry60",
+    "nama": "TRILOGY strawberry Lemoncake 60ml",
+    "harga": 160000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "trmlt99",
+    "nama": "TRML T99 SINGLE batre",
+    "harga": 510000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "TWEZER",
+    "nama": "TWEZER votus",
+    "harga": 35000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "ursacap",
+    "nama": "ursa cap pod kit",
+    "harga": 140000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "ursaepouch",
+    "nama": "ursa epouch pod kit",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "ursanano3",
+    "nama": "ursa nano 3 NEW",
+    "harga": 215000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "ursananos2bundling",
+    "nama": "ursa nano s2 bundling liq",
+    "harga": 170000,
+    "stok": 1,
+    "kategori": "device"
+  },
+  {
+    "id": "vanilasalt",
+    "nama": "vanilla licious saltnic",
+    "harga": 125000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "band",
+    "nama": "Vape Band",
+    "harga": 10000,
+    "stok": 8,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "vapecell4",
+    "nama": "vapecell Q4",
+    "harga": 100000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "gensmod",
+    "nama": "vaporesso gen s 220w mod",
+    "harga": 350000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "voltazio",
+    "nama": "voltazio mod 200w + rda",
+    "harga": 300000,
+    "stok": 3,
+    "kategori": "device"
+  },
+  {
+    "id": "vrk2500",
+    "nama": "vrk 2500mah battery",
+    "harga": 80000,
+    "stok": 9,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "vrk3000",
+    "nama": "vrk 3000mah",
+    "harga": 120000,
+    "stok": 4,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "vrk3500",
+    "nama": "vrk 3500mah 30A battery",
+    "harga": 140000,
+    "stok": 3,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "vtc4",
+    "nama": "vtc 4",
+    "harga": 40000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "vtc5",
+    "nama": "vtc 5 / 5a",
+    "harga": 60000,
+    "stok": 0,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "wakacawlavapink",
+    "nama": "wakacaw lava pink 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "wakacawv2melon",
+    "nama": "wakacaw v2 melon banana 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "waspnanopodkit",
+    "nama": "WASP nano Pod kit",
+    "harga": 100000,
+    "stok": 3,
+    "kategori": "device"
+  },
+  {
+    "id": "watermelonhana",
+    "nama": "watermelon hana 30ml salt",
+    "harga": 80000,
+    "stok": 2,
+    "kategori": "liquid"
+  },
+  {
+    "id": "WDbananasalt",
+    "nama": "WD banana salt 30ml",
+    "harga": 130000,
+    "stok": 0,
+    "kategori": "liquid"
+  },
+  {
+    "id": "wdhhoneydew60",
+    "nama": "WD honeydew 60ml",
+    "harga": 155000,
+    "stok": 0,
+    "kategori": "-"
+  },
+  {
+    "id": "wild",
+    "nama": "wildtip",
+    "harga": 100000,
+    "stok": 1,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "wrap",
+    "nama": "wrap batre",
+    "harga": 5000,
+    "stok": 9,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "wrapsvrk",
+    "nama": "wrap batre vrk 18650 / 21700",
+    "harga": 10000,
+    "stok": 23,
+    "kategori": "aksesoris"
+  },
+  {
+    "id": "xlimgoroyal",
+    "nama": "xlim go royal",
+    "harga": 210000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "xlimpro2naruto",
+    "nama": "xlim pro 2 naruto/sasuke edition",
+    "harga": 340000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "xlimsqpro",
+    "nama": "XLIM SQ PRO 2 podkit",
+    "harga": 360000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "xros4mini",
+    "nama": "xros 4 mini pod promo",
+    "harga": 150000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "xros5",
+    "nama": "xros 5 30w pod kit",
+    "harga": 300000,
+    "stok": 3,
+    "kategori": "device"
+  },
+  {
+    "id": "xros5bundling",
+    "nama": "xros 5 bundling pod kit liq",
+    "harga": 210000,
+    "stok": 4,
+    "kategori": "device"
+  },
+  {
+    "id": "xroscubepodkit",
+    "nama": "xros cube pod kit",
+    "harga": 200000,
+    "stok": 0,
+    "kategori": "device"
+  },
+  {
+    "id": "Xrosnanokotak",
+    "nama": "xros nano kotak VIERRATALE",
+    "harga": 240000,
+    "stok": 7,
+    "kategori": "device"
+  },
+  {
+    "id": "zuludispo",
+    "nama": "zulu pod disposable",
+    "harga": 50000,
+    "stok": 2,
+    "kategori": "device"
+  }
+]

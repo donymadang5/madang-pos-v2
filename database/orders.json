@@ -1,0 +1,187 @@
+[
+  {
+    "id": "ORD20260713-65071",
+    "customer": "40914026266821@lid",
+    "items": [
+      {
+        "id": "juicenationsalt15",
+        "nama": "juice nation salt 15ml",
+        "harga": 45000,
+        "qty": 1
+      },
+      {
+        "id": "freemax15ml",
+        "nama": "freemax bundling 15ml",
+        "harga": 150000,
+        "stok": 4,
+        "kategori": "device"
+      }
+    ],
+    "total": null,
+    "status": "LUNAS",
+    "createdAt": "2026-07-13T13:33:16.951Z"
+  },
+  {
+    "id": "ORD20260713-98980",
+    "customer": "40914026266821@lid",
+    "items": [
+      {
+        "id": "ONGKOS-PASANG",
+        "nama": "ongkos pasang/ RECOIL PREBUILD",
+        "harga": 5000,
+        "stok": 0,
+        "kategori": "add on"
+      }
+    ],
+    "total": null,
+    "status": "LUNAS",
+    "createdAt": "2026-07-13T13:35:52.258Z"
+  },
+  {
+    "id": "ORD20260713-57861",
+    "customer": "40914026266821@lid",
+    "items": [
+      {
+        "id": "ONGKOS-PASANG",
+        "nama": "ongkos pasang/ RECOIL PREBUILD",
+        "harga": 5000,
+        "stok": 0,
+        "kategori": "add on"
+      }
+    ],
+    "total": null,
+    "status": "MENUNGGU_PEMBAYARAN",
+    "createdAt": "2026-07-13T13:37:59.902Z"
+  },
+  {
+    "id": "ORD20260713-52020",
+    "customer": "40914026266821@lid",
+    "items": [
+      {
+        "id": "ONGKOS-PASANG",
+        "nama": "ongkos pasang/ RECOIL PREBUILD",
+        "harga": 5000,
+        "stok": 0,
+        "kategori": "add on"
+      }
+    ],
+    "total": null,
+    "status": "LUNAS",
+    "createdAt": "2026-07-13T13:43:59.209Z"
+  },
+  {
+    "id": "ORD20260713-40307",
+    "customer": "40914026266821@lid",
+    "items": [
+      {
+        "id": "ONGKOS-PASANG",
+        "nama": "ongkos pasang/ RECOIL PREBUILD",
+        "harga": 5000,
+        "stok": 0,
+        "kategori": "add on"
+      }
+    ],
+    "total": null,
+    "status": "LUNAS",
+    "createdAt": "2026-07-13T13:46:47.366Z"
+  },
+  {
+    "id": "ORD20260713-28593",
+    "customer": "50500292583550@lid",
+    "items": [
+      {
+        "id": "ONGKOS-PASANG",
+        "nama": "ongkos pasang/ RECOIL PREBUILD",
+        "harga": 5000,
+        "stok": null,
+        "kategori": "add on"
+      }
+    ],
+    "total": null,
+    "status": "LUNAS",
+    "createdAt": "2026-07-13T15:14:18.929Z"
+  },
+  {
+    "id": "ORD20260714-29990",
+    "customer": "40914026266821@lid",
+    "items": [
+      {
+        "id": "casebattery2",
+        "nama": "case battery isi 2",
+        "harga": 10000,
+        "stok": 18,
+        "kategori": "aksesoris"
+      }
+    ],
+    "total": null,
+    "status": "LUNAS",
+    "createdAt": "2026-07-14T00:21:03.945Z"
+  },
+  {
+    "id": "ORD20260714-65553",
+    "customer": "40914026266821@lid",
+    "items": [
+      {
+        "id": "charger1slot",
+        "nama": "charger vapecell q1 1 slot",
+        "harga": 50000,
+        "stok": 2,
+        "kategori": "aksesoris"
+      }
+    ],
+    "total": null,
+    "status": "MENUNGGU_VERIFIKASI",
+    "createdAt": "2026-07-14T00:29:29.509Z"
+  },
+  {
+    "id": "ORD20260714-74965",
+    "customer": "40914026266821@lid",
+    "items": [
+      {
+        "id": "ONGKOS-PASANG",
+        "nama": "ongkos pasang/ RECOIL PREBUILD",
+        "harga": 5000,
+        "stok": null,
+        "kategori": "add on",
+        "qty": 1
+      }
+    ],
+    "total": 5000,
+    "status": "LUNAS",
+    "createdAt": "2026-07-14T01:02:15.238Z"
+  },
+  {
+    "id": "ORD20260714-27205",
+    "customer": "40914026266821@lid",
+    "items": [
+      {
+        "id": "komodosusu",
+        "nama": "driptip 810 N",
+        "harga": 40000,
+        "stok": 3,
+        "kategori": "aksesoris",
+        "qty": 1
+      }
+    ],
+    "total": 40000,
+    "status": "LUNAS",
+    "createdAt": "2026-07-14T02:12:35.977Z"
+  },
+  {
+    "id": "ORD20260714-13049",
+    "customer": "40914026266821@lid",
+    "items": [
+      {
+        "id": "DRIPTIP810",
+        "nama": "DRIPTIP810",
+        "harga": 30000,
+        "stok": 1,
+        "kategori": "aksesoris",
+        "qty": 1
+      }
+    ],
+    "total": 30000,
+    "status": "LUNAS",
+    "createdAt": "2026-07-14T04:14:44.427Z"
+  }
+]

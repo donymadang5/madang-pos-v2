@@ -18,13 +18,11 @@ async function start() {
 
     const sock = makeWASocket({
         auth: state,
-        logger: pino({ level: "info" }),
+        logger: pino({ level: "error" }),
         printQRInTerminal: true
     });
 
     sock.ev.on("connection.update", (update) => {
-
-        console.log(update);
 
         const {
             connection,
@@ -42,8 +40,6 @@ async function start() {
         }
 
         if (connection === "close") {
-
-            console.log(lastDisconnect);
 
             const reconnect =
                 lastDisconnect?.error?.output?.statusCode !==
@@ -65,7 +61,7 @@ async function start() {
         try {
             await messageHandler(sock, m);
         } catch (e) {
-            console.error(e);
+            console.error("❌ Error:", e.message);
         }
 
     });

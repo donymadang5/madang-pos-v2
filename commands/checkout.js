@@ -29,57 +29,68 @@ module.exports = async (sock, jid) => {
     const voucher = null;
     const total = subtotal - diskon;
 
-    await customerService.saveCustomer(jid);
+    try {
+        await customerService.saveCustomer(jid);
 
-    const order = await orderService.createOrder(
-        jid,
-        cart.items,
-        subtotal,
-        voucher,
-        diskon
-    );
+        // ✅ FIXED - Pass parameter dengan benar sebagai object
+        const order = await orderService.createOrder(
+            jid,
+            cart.items,
+            subtotal,
+            {
+                voucher: voucher,
+                diskon: diskon
+            }
+        );
 
-    await session.goto(jid, "WAIT_PAYMENT", {
-        lastOrderId: order.id
-    });
+        await session.goto(jid, "WAIT_PAYMENT", {
+            lastOrderId: order.id
+        });
 
-    await cartService.clearCart(jid);
+        await cartService.clearCart(jid);
 
-    let caption = "";
+        let caption = "";
 
-    caption += "🏪 *MADANG VAPE*\n";
-    caption += "━━━━━━━━━━━━━━━━━━\n\n";
+        caption += "🏪 *MADANG VAPE*\n";
+        caption += "━━━━━━━━━━━━━━━━━━\n\n";
 
-    caption += "🧾 *INVOICE*\n\n";
-    caption += `Order : ${order.id}\n\n`;
+        caption += "🧾 *INVOICE*\n\n";
+        caption += `Order : ${order.id}\n\n`;
 
-    for (const item of cart.items) {
+        for (const item of cart.items) {
 
-        caption += `${item.nama}\n`;
-        caption += `${item.qty} x ${formatRupiah(item.harga)}\n`;
-        caption += `= ${formatRupiah(item.qty * item.harga)}\n\n`;
+            caption += `${item.nama}\n`;
+            caption += `${item.qty} x ${formatRupiah(item.harga)}\n`;
+            caption += `= ${formatRupiah(item.qty * item.harga)}\n\n`;
 
-    }
+        }
 
-    caption += "━━━━━━━━━━━━━━━━━━\n";
+        caption += "━━━━━━━━━━━━━━━━━━\n";
 
-    caption += `Subtotal : ${formatRupiah(subtotal)}\n`;
+        caption += `Subtotal : ${formatRupiah(subtotal)}\n`;
 
-    if (diskon > 0) {
-        caption += `Diskon : -${formatRupiah(diskon)}\n`;
-    }
+        if (diskon > 0) {
+            caption += `Diskon : -${formatRupiah(diskon)}\n`;
+        }
 
-    caption += `Total : ${formatRupiah(total)}\n\n`;
+        caption += `Total : ${formatRupiah(total)}\n\n`;
 
-    caption +=
+        caption +=
 `Silakan scan QRIS untuk melakukan pembayaran.
 
 1️⃣ Saya Sudah Transfer
 2️⃣ Batal`;
 
-    await sock.sendMessage(jid, {
-        image: fs.readFileSync(config.public.qris),
-        caption
-    });
+        await sock.sendMessage(jid, {
+            image: fs.readFileSync(config.public.qris),
+            caption
+        });
+
+    } catch (error) {
+        console.error("Error in checkout:", error);
+        return sock.sendMessage(jid, {
+            text: "❌ Terjadi kesalahan saat checkout. Silakan coba lagi."
+        });
+    }
 
 };

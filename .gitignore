@@ -1,4 +1,29 @@
+# Dependencies
 node_modules/
-auth_info/
+
+# WhatsApp Session
+session/
+
+# Runtime Data
+invoice/
+backup/
+logs/
+
+# Database Runtime
+database/customers.json
+database/orders.json
+database/payments.json
+database/sessions.json
+
+# Reports
+performance-report.json
+security-audit-report.json
+
+# Environment
+.env
+
+# Logs
 *.log
+
+# OS
 .DS_Store

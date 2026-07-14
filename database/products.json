@@ -52,7 +52,7 @@
     "id": "andromedasalt30",
     "nama": "andromeda salt 30ml",
     "harga": 80000,
-    "stok": 2,
+    "stok": 3,
     "kategori": "liquid"
   },
   {
@@ -192,7 +192,7 @@
     "id": "casebattery2",
     "nama": "case battery isi 2",
     "harga": 10000,
-    "stok": null,
+    "stok": 18,
     "kategori": "aksesoris"
   },
   {
@@ -661,7 +661,7 @@
     "id": "komodosusu",
     "nama": "driptip 810 N",
     "harga": 40000,
-    "stok": 2,
+    "stok": 3,
     "kategori": "aksesoris"
   },
   {
@@ -689,7 +689,7 @@
     "id": "DRIPTIP810",
     "nama": "DRIPTIP810",
     "harga": 30000,
-    "stok": 0,
+    "stok": 1,
     "kategori": "aksesoris"
   },
   {
@@ -1032,7 +1032,7 @@
     "id": "freemax15ml",
     "nama": "freemax bundling 15ml",
     "harga": 150000,
-    "stok": null,
+    "stok": 4,
     "kategori": "device"
   },
   {
@@ -1291,7 +1291,7 @@
     "id": "juicenationsalt15",
     "nama": "juice nation salt 15ml",
     "harga": 45000,
-    "stok": 5,
+    "stok": 6,
     "kategori": "liquid"
   },
   {
@@ -5330,7 +5330,7 @@
     "id": "ONGKOS-PASANG",
     "nama": "ongkos pasang/ RECOIL PREBUILD",
     "harga": 5000,
-    "stok": null,
+    "stok": 0,
     "kategori": "add on"
   },
   {

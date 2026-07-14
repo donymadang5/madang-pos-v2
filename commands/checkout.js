@@ -9,7 +9,6 @@ const config = require("../config/config");
 const { formatRupiah } = require("../utils/helper");
 
 module.exports = async (sock, jid) => {
-
     const cart = await cartService.getCart(jid);
 
     if (!cart || cart.items.length === 0) {
@@ -24,73 +23,71 @@ module.exports = async (sock, jid) => {
         subtotal += Number(item.harga) * Number(item.qty);
     }
 
-    // Belum memakai voucher
     const diskon = 0;
     const voucher = null;
     const total = subtotal - diskon;
 
     try {
+
         await customerService.saveCustomer(jid);
 
-        // ✅ FIXED - Pass parameter dengan benar sebagai object
         const order = await orderService.createOrder(
             jid,
             cart.items,
             subtotal,
             {
-                voucher: voucher,
-                diskon: diskon
+                voucher,
+                diskon,
+                total,
+                status: "MENUNGGU_PEMBAYARAN"
             }
         );
 
         await session.goto(jid, "WAIT_PAYMENT", {
-            lastOrderId: order.id
+            lastOrderId: order.id,
+            total
         });
 
         await cartService.clearCart(jid);
 
         let caption = "";
-
         caption += "🏪 *MADANG VAPE*\n";
         caption += "━━━━━━━━━━━━━━━━━━\n\n";
-
         caption += "🧾 *INVOICE*\n\n";
-        caption += `Order : ${order.id}\n\n`;
+
+        caption += `ID Order : ${order.id}\n`;
+        caption += `Status   : MENUNGGU PEMBAYARAN\n\n`;
 
         for (const item of cart.items) {
-
             caption += `${item.nama}\n`;
             caption += `${item.qty} x ${formatRupiah(item.harga)}\n`;
             caption += `= ${formatRupiah(item.qty * item.harga)}\n\n`;
-
         }
 
         caption += "━━━━━━━━━━━━━━━━━━\n";
-
         caption += `Subtotal : ${formatRupiah(subtotal)}\n`;
 
         if (diskon > 0) {
-            caption += `Diskon : -${formatRupiah(diskon)}\n`;
+            caption += `Diskon   : -${formatRupiah(diskon)}\n`;
         }
 
-        caption += `Total : ${formatRupiah(total)}\n\n`;
+        caption += `TOTAL    : ${formatRupiah(total)}\n\n`;
 
-        caption +=
-`Silakan scan QRIS untuk melakukan pembayaran.
-
-1️⃣ Saya Sudah Transfer
-2️⃣ Batal`;
+        caption += "Silakan scan QRIS di bawah.\n\n";
+        caption += "Setelah transfer:\n";
+        caption += "1️⃣ Saya Sudah Transfer\n";
+        caption += "2️⃣ Batal";
 
         await sock.sendMessage(jid, {
             image: fs.readFileSync(config.public.qris),
             caption
         });
 
-    } catch (error) {
-        console.error("Error in checkout:", error);
+    } catch (err) {
+        console.error(err);
+
         return sock.sendMessage(jid, {
-            text: "❌ Terjadi kesalahan saat checkout. Silakan coba lagi."
+            text: "❌ Terjadi kesalahan saat checkout."
         });
     }
-
 };

@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": 1784032771340,
+    "type": "IMPORT",
+    "message": "40914026266821@lid mengimpor 856 produk",
+    "data": {
+      "admin": "40914026266821@lid",
+      "totalProduk": 856
+    },
+    "createdAt": "2026-07-14T12:39:31.340Z"
+  }
+]

@@ -1,4 +1,7 @@
 const session = require("../../services/sessionService");
+const activity = require("../../services/activityService");
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 module.exports = async (sock, msg, jid, state) => {
 
@@ -12,18 +15,19 @@ module.exports = async (sock, msg, jid, state) => {
         "";
 
     if (body.toLowerCase() === "batal") {
-
         await session.clearSession(jid);
 
-        await sock.sendMessage(jid,{
-            text:"❌ Broadcast dibatalkan."
+        await sock.sendMessage(jid, {
+            text: "❌ Broadcast dibatalkan."
         });
 
         return true;
     }
 
-    const image =
-        msg.message?.imageMessage;
+    const image = msg.message?.imageMessage;
+
+    let sukses = 0;
+    let gagal = 0;
 
     // ==========================
     // BROADCAST TEKS
@@ -35,30 +39,47 @@ module.exports = async (sock, msg, jid, state) => {
             return true;
         }
 
-        let sukses = 0;
-
         for (const target of state.targets) {
 
             try {
 
-                await sock.sendMessage(target,{
-                    text:body
+                await sock.sendMessage(target, {
+                    text: body
                 });
 
                 sukses++;
 
-            } catch (e) {}
+            } catch (e) {
 
+                gagal++;
+
+            }
+
+            await sleep(1500);
         }
+
+        await activity.add(
+            "BROADCAST",
+            `Broadcast teks ke ${state.targets.length} customer`,
+            {
+                admin: jid,
+                sukses,
+                gagal
+            }
+        );
 
         await session.clearSession(jid);
 
-        await sock.sendMessage(jid,{
-            text:`✅ Broadcast selesai.\n\nBerhasil : ${sukses}/${state.targets.length}`
+        await sock.sendMessage(jid, {
+            text:
+`✅ Broadcast selesai
+
+Berhasil : ${sukses}
+Gagal    : ${gagal}
+Total    : ${state.targets.length}`
         });
 
         return true;
-
     }
 
     // ==========================
@@ -66,35 +87,48 @@ module.exports = async (sock, msg, jid, state) => {
     // ==========================
 
     const caption = image.caption || "";
-
-    let sukses = 0;
+    const media = await sock.downloadMediaMessage(msg);
 
     for (const target of state.targets) {
 
         try {
 
-            await sock.sendMessage(target,{
-
-                image:{
-                    url: await sock.downloadMediaMessage(msg)
-                },
-
+            await sock.sendMessage(target, {
+                image: media,
                 caption
-
             });
 
             sukses++;
 
-        } catch(e){}
+        } catch (e) {
 
+            gagal++;
+
+        }
+
+        await sleep(1500);
     }
+
+    await activity.add(
+        "BROADCAST",
+        `Broadcast gambar ke ${state.targets.length} customer`,
+        {
+            admin: jid,
+            sukses,
+            gagal
+        }
+    );
 
     await session.clearSession(jid);
 
-    await sock.sendMessage(jid,{
-        text:`✅ Broadcast gambar selesai.\n\nBerhasil : ${sukses}/${state.targets.length}`
+    await sock.sendMessage(jid, {
+        text:
+`✅ Broadcast gambar selesai
+
+Berhasil : ${sukses}
+Gagal    : ${gagal}
+Total    : ${state.targets.length}`
     });
 
     return true;
-
 };

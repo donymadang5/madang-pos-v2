@@ -22,135 +22,137 @@ module.exports = async (sock, jid, body) => {
     // TRIGGER
     // ===========================
 
-    if (text === "haalo") {
-        return home(sock, jid);
-    }
+    switch (text) {
 
-    if (text === "help") {
-        return sock.sendMessage(jid, {
-            text:
+        case "haalo":
+            return home(sock, jid);
+
+        case "help":
+            return sock.sendMessage(jid, {
+                text:
 `📖 *BANTUAN*
 
 Ketik *haalo* untuk mulai berbelanja.
 
 Saat menu tampil cukup balas angka sesuai pilihan.`
-        });
+            });
+
     }
 
     const state = await session.getSession(jid);
 
-    if (!state || !state.step) {
+    if (!state?.step) {
         return;
     }
 
-    // ===========================
-    // HOME
-    // ===========================
+    switch (state.step) {
 
-    if (state.step === "HOME") {
+        // ===========================
+        // HOME
+        // ===========================
 
-        if (text === "1" || text === "menu_belanja") {
+        case "HOME":
 
-            let msg = "📂 *Pilih Kategori*\n\n";
+            switch (text) {
 
-            state.kategori.forEach((k, i) => {
-                msg += `${i + 1}. ${k}\n`;
-            });
+                case "1":
+                case "menu_belanja": {
 
-            await session.goto(jid, "KATEGORI", {
-                kategori: state.kategori
-            });
+                    let msg = "📂 *Pilih Kategori*\n\n";
 
-            return sock.sendMessage(jid, {
-                text: msg
-            });
+                    state.kategori.forEach((k, i) => {
+                        msg += `${i + 1}. ${k}\n`;
+                    });
 
-        }
+                    await session.goto(jid, "KATEGORI", {
+                        kategori: state.kategori
+                    });
 
-        if (text === "2" || text === "menu_pesanan") {
-            return pesanan(sock, jid);
-        }
+                    return sock.sendMessage(jid, {
+                        text: msg
+                    });
 
-        if (text === "3" || text === "menu_admin") {
+                }
 
-            return sock.sendMessage(jid, {
-                text:
+                case "2":
+                case "menu_pesanan":
+                    return pesanan(sock, jid);
+
+                case "3":
+                case "menu_admin":
+
+                    return sock.sendMessage(jid, {
+                        text:
 `☎ *Hubungi Admin*
 
 08xxxxxxxxxx`
-            });
+                    });
+
+                case "0":
+
+                    await session.clearSession(jid);
+
+                    return sock.sendMessage(jid, {
+                        text: "👋 Terima kasih. Sampai jumpa."
+                    });
+
+            }
+
+            return;
+
+        // ===========================
+        // KATEGORI
+        // ===========================
+
+        case "KATEGORI": {
+
+            const nomor = Number(text);
+
+            if (isNaN(nomor)) return;
+
+            return kategoriMenu(sock, jid, nomor);
 
         }
 
-        if (text === "0") {
+        // ===========================
+        // PRODUK
+        // ===========================
 
-            await session.clearSession(jid);
+        case "PRODUK": {
 
-            return sock.sendMessage(jid, {
-                text: "👋 Terima kasih. Sampai jumpa."
-            });
+            const nomor = Number(text);
+
+            if (isNaN(nomor)) return;
+
+            return produkMenu(sock, jid, nomor);
 
         }
 
-        return;
+        // ===========================
+        // QTY
+        // ===========================
 
-    }
+        case "QTY": {
 
-    // ===========================
-    // KATEGORI
-    // ===========================
+            const qty = Number(text);
 
-    if (state.step === "KATEGORI") {
+            if (isNaN(qty) || qty <= 0) {
 
-        const nomor = Number(text);
+                return sock.sendMessage(jid, {
+                    text: "❌ Masukkan jumlah yang valid (angka lebih dari 0)"
+                });
 
-        if (isNaN(nomor)) return;
+            }
 
-        return kategoriMenu(sock, jid, nomor);
-
-    }
-
-    // ===========================
-    // PRODUK
-    // ===========================
-
-    if (state.step === "PRODUK") {
-
-        const nomor = Number(text);
-
-        if (isNaN(nomor)) return;
-
-        return produkMenu(sock, jid, nomor);
-
-    }
-
-    // ===========================
-    // QTY
-    // ===========================
-
-    if (state.step === "QTY") {
-
-        const qty = Number(text);
-
-        if (isNaN(qty) || qty <= 0) {
-            return sock.sendMessage(jid, {
-                text: "❌ Masukkan jumlah yang valid (angka lebih dari 0)"
-            });
-        }
-
-        try {
-            // Tambahkan item ke keranjang
             await cart.addItem(jid, state.product, qty);
 
             const subtotal = qty * state.product.harga;
 
-            // Update session ke AFTER_CART
             await session.goto(jid, "AFTER_CART", {
                 product: state.product
             });
 
-            // Kirim pesan respons
-            await sock.sendMessage(jid, {
+            return sock.sendMessage(jid, {
                 text:
 `✅ Berhasil ditambahkan ke keranjang
 
@@ -165,62 +167,53 @@ Subtotal : ${formatRupiah(subtotal)}
 3️⃣ Checkout`
             });
 
-        } catch (error) {
-            console.error("Error dalam QTY handler:", error);
-            return sock.sendMessage(jid, {
-                text: "❌ Terjadi kesalahan. Silakan coba lagi."
-            });
         }
+        // ===========================
+        // AFTER CART
+        // ===========================
 
-        return;
+        case "AFTER_CART":
 
-    }
+            switch (text) {
 
-    // ===========================
-    // AFTER CART
-    // ===========================
+                case "1":
+                    return home(sock, jid);
 
-    if (state.step === "AFTER_CART") {
+                case "2":
+                    return keranjang(sock, jid);
 
-        if (text === "1") {
-            return home(sock, jid);
-        }
+                case "3":
+                    return checkout(sock, jid);
 
-        if (text === "2") {
-            return keranjang(sock, jid);
-        }
+            }
 
-        if (text === "3") {
-            return checkout(sock, jid);
-        }
+            return;
 
-        return;
+        // ===========================
+        // WAIT PAYMENT
+        // ===========================
 
-    }
+        case "WAIT_PAYMENT":
 
-    // ===========================
-    // WAIT PAYMENT
-    // ===========================
+            switch (text) {
 
-    if (state.step === "WAIT_PAYMENT") {
+                case "1":
 
-        if (text === "1") {
+                    await paymentService.savePayment({
+                        orderId: state.lastOrderId,
+                        from: jid,
+                        status: "MENUNGGU_VERIFIKASI"
+                    });
 
-            await paymentService.savePayment({
-                orderId: state.lastOrderId,
-                from: jid,
-                status: "MENUNGGU_VERIFIKASI"
-            });
+                    await orderService.updateStatus(
+                        state.lastOrderId,
+                        "MENUNGGU_VERIFIKASI"
+                    );
 
-            await orderService.updateStatus(
-                state.lastOrderId,
-                "MENUNGGU_VERIFIKASI"
-            );
+                    await session.clearSession(jid);
 
-            await session.clearSession(jid);
-
-            return sock.sendMessage(jid, {
-                text:
+                    return sock.sendMessage(jid, {
+                        text:
 `✅ Bukti pembayaran diterima.
 
 ID Order : ${state.lastOrderId}
@@ -228,24 +221,23 @@ ID Order : ${state.lastOrderId}
 Status : MENUNGGU_VERIFIKASI
 
 Admin akan segera memverifikasi pembayaran Anda.`
-            });
+                    });
 
-        }
+                case "2":
 
-        if (text === "2") {
+                    await session.clearSession(jid);
 
-            await session.clearSession(jid);
+                    return sock.sendMessage(jid, {
+                        text: "❌ Pembayaran dibatalkan."
+                    });
 
-            return sock.sendMessage(jid, {
-                text: "❌ Pembayaran dibatalkan."
-            });
+            }
 
-        }
+            return;
 
-        return;
+        default:
+            return;
 
     }
-
-    return;
 
 };

@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-07-14T11:37:38.851Z",
+  "passed": 18,
+  "failed": 0,
+  "total": 18,
+  "passRate": "100.00%",
+  "results": [
+    {
+      "name": "Get all products",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get product by ID",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get categories",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Add item to cart",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get cart",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Clear cart",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Create order",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get order",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get today orders",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Update order status",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get order summary",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Save customer",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get customer",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get all customers",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Update customer order",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Create voucher",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Validate voucher",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Generate invoice",
+      "status": "✅ PASS"
+    }
+  ]
+}

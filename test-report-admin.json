@@ -1,0 +1,126 @@
+{
+  "timestamp": "2026-07-14T11:39:07.215Z",
+  "testType": "ADMIN_FEATURES",
+  "passed": 29,
+  "failed": 0,
+  "total": 29,
+  "passRate": "100.00%",
+  "results": [
+    {
+      "name": "Register admin",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Check admin status",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get all admins",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get order summary",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get today orders",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get today revenue",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get waiting verification orders",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get orders by status",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Find order by keyword",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get all customers",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get top customers",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Search customer",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get customers by point",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get new customers",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get inactive customers",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get customer detail",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get all products",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Get product by category",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Reduce stock",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Dashboard statistics",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Order status breakdown",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Customer member distribution",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Export orders list",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Export customers list",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Export products list",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Database files exist",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Backup directory exists",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Non-admin cannot access admin features",
+      "status": "✅ PASS"
+    },
+    {
+      "name": "Remove admin",
+      "status": "✅ PASS"
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
 
     owner: {
@@ -15,21 +17,23 @@ module.exports = {
 
     database: {
 
-        products: "./database/products.json",
+        products: path.join(__dirname, "../database/products.json"),
 
-        customers: "./database/customers.json",
+        customers: path.join(__dirname, "../database/customers.json"),
 
-        orders: "./database/orders.json",
+        orders: path.join(__dirname, "../database/orders.json"),
 
-        payments: "./database/payments.json",
+        payments: path.join(__dirname, "../database/payments.json"),
 
-        sessions: "./database/sessions.json",
+        sessions: path.join(__dirname, "../database/sessions.json"),
 
-        admins: "./database/admins.json",
+        admins: path.join(__dirname, "../database/admins.json"),
 
-        vouchers: "./database/vouchers.json",
+        vouchers: path.join(__dirname, "../database/vouchers.json"),
 
-        activity: "./database/activity.json"
+        activity: path.join(__dirname, "../database/activity.json"),
+
+        carts: path.join(__dirname, "../database/carts.json")
 
     },
 

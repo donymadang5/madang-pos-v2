@@ -132,16 +132,26 @@ Saat menu tampil cukup balas angka sesuai pilihan.`
 
         const qty = Number(text);
 
-        if (isNaN(qty) || qty <= 0) return;
+        if (isNaN(qty) || qty <= 0) {
+            return sock.sendMessage(jid, {
+                text: "❌ Masukkan jumlah yang valid (angka lebih dari 0)"
+            });
+        }
 
-        await cart.addItem(jid, state.product, qty);
+        try {
+            // Tambahkan item ke keranjang
+            await cart.addItem(jid, state.product, qty);
 
-        const subtotal = qty * state.product.harga;
+            const subtotal = qty * state.product.harga;
 
-        await session.goto(jid, "AFTER_CART");
+            // Update session ke AFTER_CART
+            await session.goto(jid, "AFTER_CART", {
+                product: state.product
+            });
 
-        return sock.sendMessage(jid, {
-            text:
+            // Kirim pesan respons
+            await sock.sendMessage(jid, {
+                text:
 `✅ Berhasil ditambahkan ke keranjang
 
 📦 ${state.product.nama}
@@ -153,7 +163,16 @@ Subtotal : ${formatRupiah(subtotal)}
 1️⃣ Belanja Lagi
 2️⃣ Lihat Keranjang
 3️⃣ Checkout`
-        });
+            });
+
+        } catch (error) {
+            console.error("Error dalam QTY handler:", error);
+            return sock.sendMessage(jid, {
+                text: "❌ Terjadi kesalahan. Silakan coba lagi."
+            });
+        }
+
+        return;
 
     }
 

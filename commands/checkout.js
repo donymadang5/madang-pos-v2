@@ -1,11 +1,7 @@
-const fs = require("fs");
-
 const cartService = require("../services/cartService");
 const orderService = require("../services/orderService");
 const customerService = require("../services/customerService");
 const session = require("../services/sessionService");
-
-const config = require("../config/config");
 const { formatRupiah } = require("../utils/helper");
 
 module.exports = async (sock, jid) => {
@@ -25,7 +21,7 @@ module.exports = async (sock, jid) => {
 
     const diskon = 0;
     const voucher = null;
-    const total = subtotal - diskon;
+    const total = subtotal;
 
     try {
 
@@ -37,57 +33,39 @@ module.exports = async (sock, jid) => {
             subtotal,
             {
                 voucher,
-                diskon,
-                total,
-                status: "MENUNGGU_PEMBAYARAN"
+                diskon
             }
         );
 
-        await session.goto(jid, "WAIT_PAYMENT", {
+        await session.goto(jid, "WAIT_VOUCHER_OPTION", {
             lastOrderId: order.id,
-            total
+            subtotal,
+            total,
+            voucher
         });
 
         await cartService.clearCart(jid);
 
-        let caption = "";
-        caption += "🏪 *MADANG VAPE*\n";
-        caption += "━━━━━━━━━━━━━━━━━━\n\n";
-        caption += "🧾 *INVOICE*\n\n";
+        return sock.sendMessage(jid, {
+            text:
+`🏪 *MADANG VAPE*
 
-        caption += `ID Order : ${order.id}\n`;
-        caption += `Status   : MENUNGGU PEMBAYARAN\n\n`;
+Subtotal : ${formatRupiah(subtotal)}
 
-        for (const item of cart.items) {
-            caption += `${item.nama}\n`;
-            caption += `${item.qty} x ${formatRupiah(item.harga)}\n`;
-            caption += `= ${formatRupiah(item.qty * item.harga)}\n\n`;
-        }
+Punya voucher?
 
-        caption += "━━━━━━━━━━━━━━━━━━\n";
-        caption += `Subtotal : ${formatRupiah(subtotal)}\n`;
-
-        if (diskon > 0) {
-            caption += `Diskon   : -${formatRupiah(diskon)}\n`;
-        }
-
-        caption += `TOTAL    : ${formatRupiah(total)}\n\n`;
-
-        caption += "Silakan scan QRIS di bawah.\n\n";
-        caption += "Setelah transfer:\n";
-        caption += "1️⃣ Saya Sudah Transfer\n";
-        caption += "2️⃣ Batal";
-
-        await sock.sendMessage(jid, {
-            image: fs.readFileSync(config.public.qris),
-            caption
+1️⃣ Ya
+2️⃣ Tidak`
         });
 
     } catch (err) {
+
         console.error(err);
 
         return sock.sendMessage(jid, {
             text: "❌ Terjadi kesalahan saat checkout."
         });
+
     }
+
 };

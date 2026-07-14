@@ -1,51 +1,36 @@
-const fs = require("fs");
+const path = require("path");
 
 const backupService = require("../services/backupService");
-const activity = require("../services/activityService");
 
 module.exports = async (sock, jid) => {
 
     try {
 
+        await sock.sendMessage(jid, {
+            text: "⏳ Sedang membuat backup database..."
+        });
+
         const file =
             await backupService.createBackup();
 
-        await activity.addLog(
-
-            "BACKUP",
-
-            jid,
-
-            file.split("/").pop()
-
-        );
+        const name =
+            path.basename(file);
 
         await sock.sendMessage(jid, {
-
-            text:
-`⏳ Membuat backup database...`
-
-        });
-
-        await sock.sendMessage(jid, {
-
-            document: fs.readFileSync(file),
-
+            document: {
+                url: file
+            },
             mimetype: "application/zip",
+            fileName: name,
+            caption:
+`✅ *BACKUP BERHASIL*
 
-            fileName: file.split("/").pop()
+Nama File :
+${name}
 
-        });
+Database berhasil dibackup.
 
-        await sock.sendMessage(jid, {
-
-            text:
-`✅ Backup berhasil dibuat.
-
-📦 ${file.split("/").pop()}
-
-📝 Activity berhasil disimpan.`
-
+Simpan file ZIP ini sebagai cadangan.`
         });
 
     } catch (err) {
@@ -53,10 +38,10 @@ module.exports = async (sock, jid) => {
         console.error(err);
 
         await sock.sendMessage(jid, {
-
             text:
-`❌ Backup gagal dibuat.`
+`❌ Backup database gagal.
 
+${err.message}`
         });
 
     }

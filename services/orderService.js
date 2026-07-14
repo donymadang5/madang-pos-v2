@@ -44,6 +44,8 @@ async function createOrder(customer, items, subtotal, option = {}) {
 
         customer,
 
+        phone: String(customer).split("@")[0],
+
         items,
 
         subtotal,

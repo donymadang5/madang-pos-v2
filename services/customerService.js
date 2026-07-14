@@ -1,150 +1,144 @@
 const config = require("../config/config");
-const { readJSON, writeJSON } = require("../utils/helper");
-const orderService = require("./orderService");
+const {
+    readJSON,
+    writeJSON
+} = require("../utils/helper");
 
 async function getCustomers() {
     return await readJSON(config.database.customers, []);
 }
 
-async function saveCustomers(customers) {
-    await writeJSON(config.database.customers, customers);
+async function saveCustomers(data) {
+    await writeJSON(config.database.customers, data);
 }
 
 async function getCustomer(jid) {
     const customers = await getCustomers();
+
     return customers.find(c => c.jid === jid);
 }
 
-async function saveCustomer(jid, nama = "") {
+async function saveCustomer(jid) {
 
     const customers = await getCustomers();
 
-    let customer = customers.find(c => c.jid === jid);
+    let customer = customers.find(
+        c => c.jid === jid
+    );
 
     if (!customer) {
 
         customer = {
             jid,
-            nama,
-
+            nama: "",
+            phone: "",
             joinAt: new Date().toISOString(),
             lastOrder: null,
-
             totalOrder: 0,
             totalBelanja: 0,
-
             poin: 0,
             totalPoin: 0,
             poinTerpakai: 0,
-
             voucher: []
         };
 
         customers.push(customer);
-
-        await saveCustomers(customers);
     }
 
-    return customer;
+    await saveCustomers(customers);
 
+    return customer;
 }
 
-async function updateOrder(jid, orderId, total) {
+async function registerCustomer(jid, nama, phone) {
 
     const customers = await getCustomers();
 
-    const customer = customers.find(c => c.jid === jid);
+    let customer = customers.find(
+        c => c.jid === jid
+    );
+
+    if (!customer) {
+
+        customer = {
+            jid,
+            joinAt: new Date().toISOString(),
+            lastOrder: null,
+            totalOrder: 0,
+            totalBelanja: 0,
+            poin: 0,
+            totalPoin: 0,
+            poinTerpakai: 0,
+            voucher: []
+        };
+
+        customers.push(customer);
+    }
+
+    customer.nama = String(nama).trim();
+    customer.phone = String(phone).trim();
+
+    await saveCustomers(customers);
+
+    return customer;
+}
+
+async function isRegistered(jid) {
+
+    const customer = await getCustomer(jid);
+
+    if (!customer) return false;
+
+    return Boolean(
+        customer.nama &&
+        customer.phone
+    );
+}
+
+async function updateCustomerOrder(jid, total) {
+
+    const customers = await getCustomers();
+
+    const customer = customers.find(
+        c => c.jid === jid
+    );
 
     if (!customer) return;
 
     customer.lastOrder = new Date().toISOString();
-
-    customer.totalOrder++;
-
-    customer.totalBelanja += Number(total);
+    customer.totalOrder =
+        Number(customer.totalOrder || 0) + 1;
+    customer.totalBelanja =
+        Number(customer.totalBelanja || 0) + Number(total);
 
     const poin = Math.floor(Number(total) / 10000);
 
-    customer.poin += poin;
-    customer.totalPoin += poin;
+    customer.poin =
+        Number(customer.poin || 0) + poin;
+
+    customer.totalPoin =
+        Number(customer.totalPoin || 0) + poin;
 
     await saveCustomers(customers);
-
-}
-
-async function tambahPoin(jid, poin) {
-
-    const customers = await getCustomers();
-
-    const customer = customers.find(c => c.jid === jid);
-
-    if (!customer) return false;
-
-    customer.poin += Number(poin);
-    customer.totalPoin += Number(poin);
-
-    await saveCustomers(customers);
-
-    return true;
-
-}
-
-async function kurangiPoin(jid, poin) {
-
-    const customers = await getCustomers();
-
-    const customer = customers.find(c => c.jid === jid);
-
-    if (!customer) return false;
-
-    if (customer.poin < poin)
-        return false;
-
-    customer.poin -= Number(poin);
-
-    customer.poinTerpakai += Number(poin);
-
-    await saveCustomers(customers);
-
-    return true;
-
-}
-
-async function addVoucher(jid, voucher) {
-
-    const customers = await getCustomers();
-
-    const customer = customers.find(c => c.jid === jid);
-
-    if (!customer) return false;
-
-    if (!Array.isArray(customer.voucher))
-        customer.voucher = [];
-
-    customer.voucher.push(voucher);
-
-    await saveCustomers(customers);
-
-    return true;
-
 }
 
 async function searchCustomer(keyword) {
 
+    keyword = String(keyword).toLowerCase();
+
     const customers = await getCustomers();
 
-    keyword = keyword.toLowerCase();
-
-    return customers.filter(c => {
-
-        const nama = (c.nama || "").toLowerCase();
-
-        return (
-            nama.includes(keyword) ||
-            c.jid.includes(keyword)
-        );
-
-    });
+    return customers.filter(c =>
+        String(c.nama || "")
+            .toLowerCase()
+            .includes(keyword) ||
+        String(c.phone || "")
+            .toLowerCase()
+            .includes(keyword) ||
+        String(c.jid || "")
+            .toLowerCase()
+            .includes(keyword)
+    );
 
 }
 
@@ -152,97 +146,24 @@ async function getTopCustomers(limit = 10) {
 
     const customers = await getCustomers();
 
-    return [...customers]
-        .sort((a,b)=>b.totalBelanja-a.totalBelanja)
-        .slice(0,limit);
+    return customers
+        .sort(
+            (a, b) =>
+                Number(b.totalBelanja || 0) -
+                Number(a.totalBelanja || 0)
+        )
+        .slice(0, limit);
 
 }
 
-async function getCustomersByPoint(minPoint){
-
-    const customers = await getCustomers();
-
-    return customers.filter(c=>
-        (c.poin||0)>=Number(minPoint)
-    );
-
-}
-
-async function getNewCustomers(days=7){
-
-    const customers=await getCustomers();
-
-    const limit=
-        Date.now()-(days*86400000);
-
-    return customers.filter(c=>
-        new Date(c.joinAt).getTime()>=limit
-    );
-
-}
-
-async function getInactiveCustomers(days=30){
-
-    const customers=await getCustomers();
-
-    const limit=
-        Date.now()-(days*86400000);
-
-    return customers.filter(c=>{
-
-        if(!c.lastOrder)
-            return true;
-
-        return new Date(c.lastOrder).getTime()<limit;
-
-    });
-
-}
-
-async function getCustomerDetail(jid){
-
-    const customer=await getCustomer(jid);
-
-    if(!customer) return null;
-
-    const history=
-        await orderService.getHistoryByCustomer(jid);
-
-    return{
-
-        ...customer,
-
-        history
-
-    };
-
-}
-
-module.exports={
-
+module.exports = {
     getCustomers,
     saveCustomers,
-
     getCustomer,
     saveCustomer,
-
-    updateOrder,
-
-    tambahPoin,
-    kurangiPoin,
-
-    addVoucher,
-
+    registerCustomer,
+    isRegistered,
+    updateCustomerOrder,
     searchCustomer,
-
-    getTopCustomers,
-
-    getCustomersByPoint,
-
-    getNewCustomers,
-
-    getInactiveCustomers,
-
-    getCustomerDetail
-
+    getTopCustomers
 };

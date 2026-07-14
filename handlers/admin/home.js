@@ -1,6 +1,5 @@
 const session = require("../../services/sessionService");
 const orderService = require("../../services/orderService");
-
 const { formatRupiah } = require("../../utils/helper");
 
 module.exports = async (sock, jid, body, state) => {
@@ -9,47 +8,47 @@ module.exports = async (sock, jid, body, state) => {
         return false;
     }
 
-    // 1. Verifikasi Pembayaran
+    // =========================
+    // 1. VERIFIKASI PEMBAYARAN
+    // =========================
     if (body === "1") {
 
         const orders = await orderService.getWaitingVerification();
 
-        if (orders.length === 0) {
-
-            await sock.sendMessage(jid,{
-                text:"✅ Tidak ada pembayaran yang menunggu verifikasi."
+        if (!orders.length) {
+            await sock.sendMessage(jid, {
+                text: "✅ Tidak ada pembayaran yang menunggu verifikasi."
             });
-
             return true;
         }
 
         let text = "🧾 *MENUNGGU VERIFIKASI*\n\n";
 
-        orders.forEach((order,i)=>{
-
-            text += `${i+1}. ${order.id}\n`;
+        orders.forEach((order, i) => {
+            text += `${i + 1}. ${order.id}\n`;
             text += `${formatRupiah(order.total)}\n\n`;
-
         });
 
         text += "Balas nomor untuk melihat detail pesanan.";
 
-        await session.goto(jid,"ADMIN_VERIFY_LIST",{
-            orders:orders.map(o=>o.id)
+        await session.goto(jid, "ADMIN_VERIFY_LIST", {
+            orders: orders.map(o => o.id)
         });
 
-        await sock.sendMessage(jid,{ text });
+        await sock.sendMessage(jid, { text });
 
         return true;
     }
 
-    // 2. Customer Manager
+    // =========================
+    // 2. CUSTOMER
+    // =========================
     if (body === "2") {
 
-        await session.goto(jid,"ADMIN_CUSTOMER_HOME");
+        await session.goto(jid, "ADMIN_CUSTOMER_HOME");
 
-        await sock.sendMessage(jid,{
-text:
+        await sock.sendMessage(jid, {
+            text:
 `👥 *CUSTOMER MANAGER*
 
 1️⃣ Total Customer
@@ -63,79 +62,103 @@ text:
         return true;
     }
 
-    // 3. Order Manager
+    // =========================
+    // 3. BROADCAST
+    // =========================
     if (body === "3") {
 
-        await session.goto(jid,"ADMIN_ORDER_HOME");
+        await session.goto(jid, "ADMIN_BROADCAST_INPUT");
 
-        await sock.sendMessage(jid,{
-text:
-`📦 *ORDER MANAGER*
+        await sock.sendMessage(jid, {
+            text:
+`📢 *BROADCAST PROMO*
 
-1️⃣ Menunggu Pembayaran
-2️⃣ Menunggu Verifikasi
-3️⃣ Order Lunas
-4️⃣ Order Hari Ini
-5️⃣ Cari Invoice
+Gunakan perintah:
+
+/broadcast all
+/broadcast poin 100
+/broadcast baru 30
+/broadcast inactive 30`
+        });
+
+        return true;
+    }
+
+    // =========================
+    // 4. STATISTIK
+    // =========================
+    if (body === "4") {
+
+        await session.goto(jid, "ADMIN_STATISTIC_HOME");
+
+        const statistic = require("./statistic");
+
+        return statistic(sock, jid, "", {
+            step: "ADMIN_STATISTIC_HOME"
+        });
+
+    }
+
+    // =========================
+    // 5. IMPORT
+    // =========================
+    if (body === "5") {
+
+        return sock.sendMessage(jid, {
+            text: "📥 Silakan kirim file Excel untuk diimport."
+        });
+
+    }
+
+    // =========================
+    // 6. EXPORT
+    // =========================
+    if (body === "6") {
+
+        return sock.sendMessage(jid, {
+            text: "📤 Menyiapkan file Excel..."
+        });
+
+    }
+
+    // =========================
+    // 7. PENGATURAN
+    // =========================
+    if (body === "7") {
+
+        await session.goto(jid, "ADMIN_SETTING");
+
+        return sock.sendMessage(jid, {
+            text:
+`⚙️ *PENGATURAN*
+
+1️⃣ Backup Database
+2️⃣ Restore Database
+3️⃣ Activity Log
 
 0️⃣ Kembali`
         });
 
-        return true;
     }
 
-    // 4. Statistik
-    if (body === "4") {
+    // =========================
+    // 8. VOUCHER
+    // =========================
+    if (body === "8") {
 
-        await session.goto(jid,"ADMIN_STATISTIC_HOME");
+        await session.goto(jid, "ADMIN_VOUCHER");
 
-        const statistic = require("./statistic");
+        return sock.sendMessage(jid, {
+            text:
+`🎁 *KELOLA VOUCHER*
 
-        return statistic(sock,jid,"",{
-            step:"ADMIN_STATISTIC_HOME"
+1️⃣ Lihat Voucher
+2️⃣ Tambah Voucher
+3️⃣ Nonaktifkan Voucher
+4️⃣ Hapus Voucher
+
+0️⃣ Kembali`
         });
-
-    }
-
-    // 5. Broadcast
-    if (body === "5") {
-
-        await session.goto(jid,"ADMIN_BROADCAST_INPUT");
-
-        await sock.sendMessage(jid,{
-text:
-`📢 *BROADCAST CUSTOMER*
-
-Silakan kirim pesan yang ingin dikirim ke seluruh customer.
-
-Contoh:
-
-🎉 Promo Hari Ini!
-Diskon 20% untuk semua menu.
-
-Kirim teks tersebut sebagai balasan.`
-        });
-
-        return true;
-    }
-
-    const menus = {
-
-        "6":"📥 Import Excel",
-        "7":"📤 Export Excel",
-        "8":"⚙️ Pengaturan"
-
-    };
-
-    if (menus[body]) {
-
-        await sock.sendMessage(jid,{
-            text:`🚧 ${menus[body]}
-
-Menu ini sedang dalam pengembangan.`
-        });
-
-        return true;
 
     }
 

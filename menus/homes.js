@@ -1,14 +1,10 @@
 const productService = require("../services/productService");
-const sessionService = require("../services/sessionService");
 const customerService = require("../services/customerService");
+const sessionService = require("../services/sessionService");
 const { sendButtons } = require("../utils/ui");
 
 module.exports = async (sock, jid) => {
 
-    // Pastikan data customer ada
-    await customerService.saveCustomer(jid);
-
-    // Cek registrasi
     const registered = await customerService.isRegistered(jid);
 
     if (!registered) {
@@ -17,14 +13,11 @@ module.exports = async (sock, jid) => {
 
         return sock.sendMessage(jid, {
             text:
-`👋 *Selamat datang di MADANG VAPE*
+`👋 Selamat datang di *Madang Vape* 👋
 
-Sebelum mulai berbelanja, silakan registrasi terlebih dahulu.
+Sebelum mulai berbelanja, silakan lakukan registrasi terlebih dahulu.
 
-📝 Silakan masukkan *nama lengkap* Anda.
-
-Contoh:
-Dony Saputra`
+📝 Balas dengan *Nama Lengkap* Anda.`
         });
 
     }
@@ -48,7 +41,7 @@ Atau balas angka:
 
 1️⃣ Belanja
 2️⃣ Pesanan Saya
-3️⃣ Bantuan
+3️⃣ Hubungi Admin
 0️⃣ Keluar`,
         "🏪 Madang POS",
         [
@@ -69,7 +62,7 @@ Atau balas angka:
             {
                 buttonId: "MENU_ADMIN",
                 buttonText: {
-                    displayText: "☎ Bantuan"
+                    displayText: "☎ Hubungi Admin"
                 },
                 type: 1
             }

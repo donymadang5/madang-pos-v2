@@ -3,7 +3,7 @@ const orderService = require("../services/orderService");
 const productService = require("../services/productService");
 const { formatRupiah } = require("../utils/helper");
 
-module.exports = async (sock,jid)=>{
+module.exports = async (sock, jid) => {
 
     const todayOrders = await orderService.getTodayOrders();
     const waiting = await orderService.getWaitingVerification();
@@ -11,10 +11,10 @@ module.exports = async (sock,jid)=>{
     const products = await productService.getProducts();
 
     const stokTipis = products.filter(
-        p=>Number(p.stok)>0 && Number(p.stok)<=5
+        p => Number(p.stok) > 0 && Number(p.stok) <= 5
     ).length;
 
-    await session.goto(jid,"ADMIN_HOME");
+    await session.goto(jid, "ADMIN_HOME");
 
     const text =
 `🏪 MADANG POS
@@ -31,16 +31,16 @@ module.exports = async (sock,jid)=>{
 ━━━━━━━━━━━━━━━━━━
 
 1️⃣ Verifikasi Pembayaran
-2️⃣ Kelola Produk
-3️⃣ Data Customer
-4️⃣ Broadcast Promo
-5️⃣ Statistik
-6️⃣ Import Excel
-7️⃣ Export Excel
-8️⃣ Pengaturan
+2️⃣ Data Customer
+3️⃣ Broadcast Promo
+4️⃣ Statistik
+5️⃣ Import Excel
+6️⃣ Export Excel
+7️⃣ Pengaturan
+8️⃣ Kelola Voucher
 
 Balas angka menu.`;
 
-    await sock.sendMessage(jid,{text});
+    await sock.sendMessage(jid, { text });
 
 };

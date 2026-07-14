@@ -1,83 +1,49 @@
-const fs = require("fs");
+const path = require("path");
 
+const session = require("../services/sessionService");
 const backupService = require("../services/backupService");
-const activity = require("../services/activityService");
 
-module.exports = async (sock, jid, args = []) => {
+module.exports = async (sock, jid) => {
 
-    try {
+    const backups =
+        await backupService.getBackupList();
 
-        let file;
+    if (!backups.length) {
 
-        if (args.length) {
-
-            file = args.join(" ");
-
-        } else {
-
-            const backups =
-                await backupService.getBackups();
-
-            if (!backups.length) {
-
-                return sock.sendMessage(jid, {
-
-                    text:
-"❌ Tidak ada file backup."
-
-                });
-
-            }
-
-            file = backups[0];
-
-        }
-
-        if (!fs.existsSync(file)) {
-
-            return sock.sendMessage(jid, {
-
-                text:
-"❌ File backup tidak ditemukan."
-
-            });
-
-        }
-
-        await backupService.restoreBackup(file);
-
-        await activity.addLog(
-
-            "RESTORE",
-
-            jid,
-
-            file.split("/").pop()
-
-        );
-
-        await sock.sendMessage(jid, {
-
+        return sock.sendMessage(jid, {
             text:
-`✅ Restore berhasil.
-
-📦 ${file.split("/").pop()}
-
-⚠️ Restart bot agar seluruh data dimuat ulang.`
-
-        });
-
-    } catch (err) {
-
-        console.error(err);
-
-        await sock.sendMessage(jid, {
-
-            text:
-`❌ Restore gagal.`
-
+`❌ Belum ada file backup.`
         });
 
     }
+
+    let text =
+`♻️ *RESTORE DATABASE*
+
+Pilih backup yang ingin direstore.
+
+`;
+
+    backups.forEach((item, index) => {
+
+        text +=
+`${index + 1}. ${item.name}\n`;
+
+    });
+
+    text +=
+`\nBalas nomor backup.`;
+
+    await session.goto(
+        jid,
+        "ADMIN_RESTORE_SELECT",
+        {
+            backups
+        }
+    );
+
+    return sock.sendMessage(jid, {
+        text
+    });
 
 };

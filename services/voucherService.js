@@ -5,35 +5,94 @@ const {
 } = require("../utils/helper");
 
 async function getVouchers() {
-    return await readJSON(
-        config.database.vouchers,
-        []
-    );
+    return await readJSON(config.database.vouchers, []);
 }
 
 async function saveVouchers(data) {
-    await writeJSON(
-        config.database.vouchers,
-        data
-    );
+    await writeJSON(config.database.vouchers, data);
 }
 
-async function getVoucher(code) {
-
-    if (!code) return null;
-
+async function getVoucher(kode) {
     const vouchers = await getVouchers();
 
     return vouchers.find(v =>
-        String(v.code).toUpperCase() ===
-        String(code).toUpperCase()
+        String(v.kode).toLowerCase() ===
+        String(kode).toLowerCase()
     );
-
 }
 
-async function validateVoucher(code, subtotal = 0) {
+async function createVoucher(voucher) {
+    const vouchers = await getVouchers();
 
-    const voucher = await getVoucher(code);
+    vouchers.push({
+        aktif: true,
+        dipakai: 0,
+        ...voucher
+    });
+
+    await saveVouchers(vouchers);
+}
+
+async function disableVoucher(kode) {
+    const vouchers = await getVouchers();
+
+    const v = vouchers.find(x =>
+        x.kode.toLowerCase() ===
+        kode.toLowerCase()
+    );
+
+    if (!v) return false;
+
+    v.aktif = false;
+
+    await saveVouchers(vouchers);
+
+    return true;
+}
+
+async function deleteVoucher(kode) {
+    const vouchers = await getVouchers();
+
+    const hasil = vouchers.filter(v =>
+        v.kode.toLowerCase() !==
+        kode.toLowerCase()
+    );
+
+    await saveVouchers(hasil);
+
+    return true;
+}
+
+async function useVoucher(kode) {
+    const vouchers = await getVouchers();
+
+    const v = vouchers.find(x =>
+        x.kode.toLowerCase() ===
+        kode.toLowerCase()
+    );
+
+    if (!v) return false;
+
+    v.dipakai = Number(v.dipakai || 0) + 1;
+
+    await saveVouchers(vouchers);
+
+    return true;
+}
+
+module.exports = {
+    getVouchers,
+    saveVouchers,
+    getVoucher,
+    createVoucher,
+    disableVoucher,
+    deleteVoucher,
+    useVoucher
+};
+
+async function validateVoucher(kode, items, subtotal) {
+
+    const voucher = await getVoucher(kode);
 
     if (!voucher) {
         return {
@@ -42,69 +101,81 @@ async function validateVoucher(code, subtotal = 0) {
         };
     }
 
-    if (voucher.status === "USED") {
+    if (!voucher.aktif) {
         return {
             ok: false,
-            message: "Voucher sudah digunakan."
+            message: "Voucher sudah tidak aktif."
         };
     }
 
-    if (voucher.expiredAt) {
+    const today = new Date().toISOString().slice(0, 10);
 
-        const expired =
-            new Date(voucher.expiredAt);
-
-        if (expired < new Date()) {
-
-            return {
-                ok: false,
-                message: "Voucher sudah kedaluwarsa."
-            };
-
-        }
-
+    if (voucher.mulai && today < voucher.mulai) {
+        return {
+            ok: false,
+            message: "Voucher belum berlaku."
+        };
     }
 
-    const minimum =
-        Number(voucher.minimum || 0);
+    if (voucher.selesai && today > voucher.selesai) {
+        return {
+            ok: false,
+            message: "Voucher sudah berakhir."
+        };
+    }
 
-    if (subtotal < minimum) {
+    if (
+        voucher.kuota &&
+        Number(voucher.dipakai || 0) >= Number(voucher.kuota)
+    ) {
+        return {
+            ok: false,
+            message: "Kuota voucher sudah habis."
+        };
+    }
 
+    if (
+        subtotal < Number(voucher.minimal || 0)
+    ) {
         return {
             ok: false,
             message:
-                `Minimal belanja Rp${minimum}.`
+                "Minimal belanja " +
+                voucher.minimal
         };
+    }
 
+    if (
+        voucher.kategori &&
+        voucher.kategori !== "SEMUA"
+    ) {
+
+        const cocok = items.some(item =>
+            String(item.kategori).toUpperCase() ===
+            String(voucher.kategori).toUpperCase()
+        );
+
+        if (!cocok) {
+            return {
+                ok: false,
+                message:
+                    "Voucher hanya berlaku untuk kategori " +
+                    voucher.kategori
+            };
+        }
     }
 
     let diskon = 0;
 
-    switch (voucher.type) {
+    if (voucher.jenis === "nominal") {
+        diskon = Number(voucher.nilai);
+    }
 
-        case "PERCENT":
-
-            diskon =
-                Math.floor(
-                    subtotal *
-                    Number(voucher.value) / 100
-                );
-
-            if (
-                voucher.maxDiscount &&
-                diskon > voucher.maxDiscount
-            ) {
-                diskon =
-                    Number(voucher.maxDiscount);
-            }
-
-            break;
-
-        default:
-
-            diskon =
-                Number(voucher.value || 0);
-
+    if (voucher.jenis === "persen") {
+        diskon =
+            subtotal *
+            Number(voucher.nilai) /
+            100;
     }
 
     if (diskon > subtotal) {
@@ -112,42 +183,86 @@ async function validateVoucher(code, subtotal = 0) {
     }
 
     return {
-
         ok: true,
-
         voucher,
-
         diskon,
-
         total: subtotal - diskon
-
     };
-
 }
 
-async function useVoucher(code, orderId = null) {
+module.exports.validateVoucher = validateVoucher;
 
-    const vouchers =
-        await getVouchers();
 
-    const index =
-        vouchers.findIndex(v =>
-            String(v.code).toUpperCase() ===
-            String(code).toUpperCase()
-        );
+async function addVoucher(voucher) {
 
-    if (index === -1)
-        return false;
+    const vouchers = await getVouchers();
 
-    vouchers[index].status = "USED";
+    const index = vouchers.findIndex(
+        v => String(v.kode).toUpperCase() === String(voucher.kode).toUpperCase()
+    );
 
-    vouchers[index].usedAt =
-        new Date().toISOString();
-
-    if (orderId) {
-        vouchers[index].orderId =
-            orderId;
+    if (index >= 0) {
+        vouchers[index] = {
+            ...vouchers[index],
+            ...voucher
+        };
+    } else {
+        vouchers.push(voucher);
     }
+
+    await saveVouchers(vouchers);
+
+    return voucher;
+}
+
+async function removeVoucher(kode) {
+
+    const vouchers = await getVouchers();
+
+    const data = vouchers.filter(
+        v => String(v.kode).toUpperCase() !== String(kode).toUpperCase()
+    );
+
+    await saveVouchers(data);
+}
+
+async function setVoucherActive(kode, aktif) {
+
+    const vouchers = await getVouchers();
+
+    const voucher = vouchers.find(
+        v => String(v.kode).toUpperCase() === String(kode).toUpperCase()
+    );
+
+    if (!voucher) return false;
+
+    voucher.aktif = aktif;
+
+    await saveVouchers(vouchers);
+
+    return true;
+}
+
+module.exports.addVoucher = addVoucher;
+module.exports.removeVoucher = removeVoucher;
+module.exports.setVoucherActive = setVoucherActive;
+
+
+async function updateVoucher(kode, data) {
+
+    const vouchers = await getVouchers();
+
+    const voucher = vouchers.find(
+        v =>
+            String(v.kode).toUpperCase() ===
+            String(kode).toUpperCase()
+    );
+
+    if (!voucher) {
+        return false;
+    }
+
+    Object.assign(voucher, data);
 
     await saveVouchers(vouchers);
 
@@ -155,52 +270,5 @@ async function useVoucher(code, orderId = null) {
 
 }
 
-async function createVoucher(data) {
+module.exports.updateVoucher = updateVoucher;
 
-    const vouchers =
-        await getVouchers();
-
-    vouchers.push({
-
-        code: String(data.code)
-            .toUpperCase(),
-
-        type: data.type || "FIXED",
-
-        value: Number(data.value || 0),
-
-        minimum:
-            Number(data.minimum || 0),
-
-        maxDiscount:
-            Number(data.maxDiscount || 0),
-
-        status: "ACTIVE",
-
-        expiredAt:
-            data.expiredAt || null,
-
-        createdAt:
-            new Date().toISOString()
-
-    });
-
-    await saveVouchers(vouchers);
-
-}
-
-module.exports = {
-
-    getVouchers,
-
-    getVoucher,
-
-    createVoucher,
-
-    validateVoucher,
-
-    useVoucher,
-
-    saveVouchers
-
-};

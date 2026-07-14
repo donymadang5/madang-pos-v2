@@ -11,6 +11,13 @@ module.exports = async (sock, m) => {
     if (!msg) return;
     if (msg.key.fromMe) return;
 
+    // =========================
+    // DEBUG WHATSAPP MESSAGE
+    // =========================
+    console.log("\n================ MESSAGE DEBUG ================");
+    console.dir(msg, { depth: null });
+    console.log("==============================================\n");
+
     const from = msg.key.remoteJid;
 
     let body = "";
@@ -29,19 +36,19 @@ module.exports = async (sock, m) => {
 
     body = body.trim();
 
-    // Command lama tetap didukung
+    // Command
     if (body.startsWith("/")) {
         return commandHandler(sock, from, body);
     }
 
     const text = body.toLowerCase();
 
-    // Trigger customer
+    // Customer
     if (text === "haalo" || text === "help") {
         return sessionHandler(sock, from, body);
     }
 
-    // Trigger admin
+    // Admin
     if (text === "admin") {
 
         if (!(await adminService.isAdmin(from))) {
@@ -51,7 +58,7 @@ module.exports = async (sock, m) => {
         return commandHandler(sock, from, "/admin");
     }
 
-    // Session admin
+    // Admin Session
     if (await adminService.isAdmin(from)) {
 
         const handled = await adminSessionHandler(
@@ -60,13 +67,10 @@ module.exports = async (sock, m) => {
             body
         );
 
-        if (handled) {
-            return;
-        }
-
+        if (handled) return;
     }
 
-    // Session customer
+    // Customer Session
     return sessionHandler(
         sock,
         from,

@@ -1,29 +1,33 @@
 const session = require("../../services/sessionService");
 const customerService = require("../../services/customerService");
 
+function getPhone(customer) {
+    if (customer.phone) return customer.phone;
+    if (customer.jid) return String(customer.jid).split("@")[0];
+    return "-";
+}
+
 module.exports = async (sock, jid, body, state) => {
 
     if (state.step === "ADMIN_CUSTOMER_SEARCH") {
 
         const hasil = await customerService.searchCustomer(body);
 
-        if (hasil.length === 0) {
-
+        if (!hasil.length) {
             await sock.sendMessage(jid, {
                 text: "❌ Customer tidak ditemukan."
             });
-
             return true;
         }
 
-        let text = "🔍 *Hasil Pencarian*\n\n";
+        let text = "🔍 *HASIL PENCARIAN*\n\n";
 
         hasil.forEach((c, i) => {
             text += `${i + 1}. ${c.nama || "-"}\n`;
-            text += `📱 ${c.jid}\n`;
-            text += `🛒 Order : ${c.totalOrder}\n`;
-            text += `💰 Belanja : Rp${Number(c.totalBelanja).toLocaleString("id-ID")}\n`;
-            text += `🎖 Member : ${c.member}\n\n`;
+            text += `📱 ${getPhone(c)}\n`;
+            text += `🛒 ${c.totalOrder} Order\n`;
+            text += `💰 Rp${Number(c.totalBelanja).toLocaleString("id-ID")}\n`;
+            text += `🎖 ${c.member}\n\n`;
         });
 
         await session.setSession(jid, {
@@ -46,7 +50,10 @@ module.exports = async (sock, jid, body, state) => {
             const customers = await customerService.getCustomers();
 
             await sock.sendMessage(jid, {
-                text: `👥 *Total Customer*\n\n${customers.length} Customer`
+                text:
+`👥 *TOTAL CUSTOMER*
+
+${customers.length} Customer`
             });
 
             return true;
@@ -59,7 +66,7 @@ module.exports = async (sock, jid, body, state) => {
             });
 
             await sock.sendMessage(jid, {
-                text: "🔍 Kirim nama atau nomor WhatsApp customer."
+                text: "🔍 Kirim nama atau nomor HP customer."
             });
 
             return true;
@@ -68,12 +75,10 @@ module.exports = async (sock, jid, body, state) => {
 
             const customers = await customerService.getTopCustomers();
 
-            if (customers.length === 0) {
-
+            if (!customers.length) {
                 await sock.sendMessage(jid, {
                     text: "Belum ada customer."
                 });
-
                 return true;
             }
 
@@ -83,9 +88,9 @@ module.exports = async (sock, jid, body, state) => {
 
                 const medal = ["🥇", "🥈", "🥉"][i] || "⭐";
 
-                text += `${medal} ${c.nama || "-"}\n`;
-                text += `Rp${Number(c.totalBelanja).toLocaleString("id-ID")}\n`;
-                text += `${c.totalOrder} Order\n\n`;
+                text += `${medal} ${getPhone(c)}\n`;
+                text += `💰 Rp${Number(c.totalBelanja).toLocaleString("id-ID")}\n`;
+                text += `🛒 ${c.totalOrder} Order\n\n`;
 
             });
 
@@ -109,20 +114,11 @@ module.exports = async (sock, jid, body, state) => {
                 step: "ADMIN_HOME"
             });
 
-            await sock.sendMessage(jid, {
-                text:
-`📊 *Dashboard Admin*
-
-1️⃣ Verifikasi Pembayaran
-2️⃣ Customer Manager
-3️⃣ Broadcast
-4️⃣ Statistik
-5️⃣ Import Excel
-6️⃣ Export Excel
-7️⃣ Pengaturan`
-            });
+            const admin = require("../../commands/admin");
+            await admin(sock, jid);
 
             return true;
+
     }
 
     return true;

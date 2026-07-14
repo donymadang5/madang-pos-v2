@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 const home = require("../menus/home");
 const kategoriMenu = require("../menus/kategori");
 const produkMenu = require("../menus/produk");
@@ -12,15 +14,14 @@ const pesanan = require("../commands/pesanan");
 const paymentService = require("../services/paymentService");
 const orderService = require("../services/orderService");
 
+const voucherService = require("../services/voucherService");
+const config = require("../config/config");
+
 const { formatRupiah } = require("../utils/helper");
 
 module.exports = async (sock, jid, body) => {
 
     const text = body.trim().toLowerCase();
-
-    // ===========================
-    // TRIGGER
-    // ===========================
 
     switch (text) {
 
@@ -33,7 +34,6 @@ module.exports = async (sock, jid, body) => {
 `📖 *BANTUAN*
 
 Ketik *haalo* untuk mulai berbelanja.
-
 Saat menu tampil cukup balas angka sesuai pilihan.`
             });
 
@@ -41,16 +41,64 @@ Saat menu tampil cukup balas angka sesuai pilihan.`
 
     const state = await session.getSession(jid);
 
-    if (!state?.step) {
-        return;
-    }
+    if (!state?.step) return;
 
     switch (state.step) {
+case "REGISTER_NAME": {
 
-        // ===========================
-        // HOME
-        // ===========================
+    const input = body.trim();
 
+    if (!input.includes("-")) {
+
+        return sock.sendMessage(jid, {
+            text:
+`❌ Format salah.
+
+Kirim dengan format:
+
+Nama-081234567890
+
+Contoh:
+Dony-081234567890`
+        });
+
+    }
+
+    const [nama, nomor] = input.split("-");
+
+    if (!nama || nama.trim().length < 3) {
+
+        return sock.sendMessage(jid, {
+            text: "❌ Nama minimal 3 karakter."
+        });
+
+    }
+
+    let phone = nomor.replace(/\D/g, "");
+
+    if (phone.startsWith("62")) {
+        phone = "0" + phone.slice(2);
+    }
+
+    if (!/^08\d{8,13}$/.test(phone)) {
+
+        return sock.sendMessage(jid, {
+            text: "❌ Nomor WhatsApp tidak valid."
+        });
+
+    }
+
+    const customerService = require("../services/customerService");
+
+    await customerService.registerCustomer(
+        jid,
+        nama.trim(),
+        phone
+    );
+
+    return home(sock, jid);
+
+}
         case "HOME":
 
             switch (text) {
@@ -80,11 +128,9 @@ Saat menu tampil cukup balas angka sesuai pilihan.`
 
                 case "3":
                 case "menu_admin":
-
                     return sock.sendMessage(jid, {
                         text:
 `☎ *Hubungi Admin*
-
 08xxxxxxxxxx`
                     });
 
@@ -100,10 +146,6 @@ Saat menu tampil cukup balas angka sesuai pilihan.`
 
             return;
 
-        // ===========================
-        // KATEGORI
-        // ===========================
-
         case "KATEGORI": {
 
             const nomor = Number(text);
@@ -113,10 +155,6 @@ Saat menu tampil cukup balas angka sesuai pilihan.`
             return kategoriMenu(sock, jid, nomor);
 
         }
-
-        // ===========================
-        // PRODUK
-        // ===========================
 
         case "PRODUK": {
 
@@ -128,10 +166,6 @@ Saat menu tampil cukup balas angka sesuai pilihan.`
 
         }
 
-        // ===========================
-        // QTY
-        // ===========================
-
         case "QTY": {
 
             const qty = Number(text);
@@ -139,7 +173,7 @@ Saat menu tampil cukup balas angka sesuai pilihan.`
             if (isNaN(qty) || qty <= 0) {
 
                 return sock.sendMessage(jid, {
-                    text: "❌ Masukkan jumlah yang valid (angka lebih dari 0)"
+                    text: "❌ Masukkan jumlah yang valid."
                 });
 
             }
@@ -168,9 +202,6 @@ Subtotal : ${formatRupiah(subtotal)}
             });
 
         }
-        // ===========================
-        // AFTER CART
-        // ===========================
 
         case "AFTER_CART":
 
@@ -187,11 +218,124 @@ Subtotal : ${formatRupiah(subtotal)}
 
             }
 
+            return;        case "WAIT_VOUCHER_OPTION":
+
+            if (text === "1") {
+
+                await session.goto(jid, "WAIT_VOUCHER_CODE", {
+                    lastOrderId: state.lastOrderId,
+                    subtotal: state.subtotal,
+                    total: state.total
+                });
+
+                return sock.sendMessage(jid, {
+                    text: "🎁 Masukkan kode voucher."
+                });
+
+            }
+
+            if (text === "2") {
+
+                const order = await orderService.getOrder(
+                    state.lastOrderId
+                );
+
+                let caption = "";
+
+                caption += "🏪 *MADANG VAPE*\n";
+                caption += "━━━━━━━━━━━━━━━━━━\n\n";
+                caption += "🧾 *INVOICE*\n\n";
+                caption += `ID Order : ${order.id}\n`;
+                caption += "Status   : MENUNGGU PEMBAYARAN\n\n";
+
+                for (const item of order.items) {
+
+                    caption += `${item.nama}\n`;
+                    caption += `${item.qty} x ${formatRupiah(item.harga)}\n`;
+                    caption += `= ${formatRupiah(item.qty * item.harga)}\n\n`;
+
+                }
+
+                caption += "━━━━━━━━━━━━━━━━━━\n";
+                caption += `Subtotal : ${formatRupiah(state.subtotal)}\n`;
+                caption += `TOTAL    : ${formatRupiah(state.total)}\n\n`;
+                caption += "Silakan scan QRIS di bawah.\n\n";
+                caption += "1️⃣ Saya Sudah Transfer\n";
+                caption += "2️⃣ Batal";
+
+                await session.goto(jid, "WAIT_PAYMENT", {
+                    lastOrderId: state.lastOrderId
+                });
+
+                return sock.sendMessage(jid, {
+                    image: fs.readFileSync(config.public.qris),
+                    caption
+                });
+
+            }
+
             return;
 
-        // ===========================
-        // WAIT PAYMENT
-        // ===========================
+        case "WAIT_VOUCHER_CODE": {
+
+            const order = await orderService.getOrder(
+                state.lastOrderId
+            );
+
+            const result = await voucherService.validateVoucher(
+                text.toUpperCase(),
+                order.items,
+                state.subtotal
+            );
+
+            if (!result.ok) {
+
+                return sock.sendMessage(jid, {
+                    text: "❌ " + result.message
+                });
+
+            }
+
+            await orderService.updateOrder(order.id, {
+                voucher: result.voucher.kode,
+                diskon: result.diskon,
+                total: result.total
+            });
+
+            let caption = "";
+
+            caption += "🏪 *MADANG VAPE*\n";
+            caption += "━━━━━━━━━━━━━━━━━━\n\n";
+            caption += "🧾 *INVOICE*\n\n";
+            caption += `ID Order : ${order.id}\n`;
+            caption += "Status   : MENUNGGU PEMBAYARAN\n\n";
+
+            for (const item of order.items) {
+
+                caption += `${item.nama}\n`;
+                caption += `${item.qty} x ${formatRupiah(item.harga)}\n`;
+                caption += `= ${formatRupiah(item.qty * item.harga)}\n\n`;
+
+            }
+
+            caption += "━━━━━━━━━━━━━━━━━━\n";
+            caption += `Subtotal : ${formatRupiah(state.subtotal)}\n`;
+            caption += `Diskon   : -${formatRupiah(result.diskon)}\n`;
+            caption += `TOTAL    : ${formatRupiah(result.total)}\n\n`;
+            caption += "Silakan scan QRIS di bawah.\n\n";
+            caption += "1️⃣ Saya Sudah Transfer\n";
+            caption += "2️⃣ Batal";
+
+            await session.goto(jid, "WAIT_PAYMENT", {
+                lastOrderId: order.id
+            });
+
+            return sock.sendMessage(jid, {
+                image: fs.readFileSync(config.public.qris),
+                caption
+            });
+
+        }
 
         case "WAIT_PAYMENT":
 

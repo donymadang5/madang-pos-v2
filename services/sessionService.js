@@ -1,5 +1,5 @@
 const config = require("../config/config");
-const { readJSON, writeJSON } = require("../utils/helper");
+const { readJSON, updateJSON } = require("../utils/helper");
 
 async function getSessions() {
     return await readJSON(config.database.sessions, {});
@@ -11,14 +11,13 @@ async function getSession(user) {
 }
 
 async function setSession(user, data) {
-    const sessions = await getSessions();
-
-    sessions[user] = {
-        ...(sessions[user] || {}),
-        ...data
-    };
-
-    await writeJSON(config.database.sessions, sessions);
+    return updateJSON(config.database.sessions, {}, sessions => {
+        sessions[user] = {
+            ...(sessions[user] || {}),
+            ...data
+        };
+        return sessions[user];
+    });
 }
 
 async function goto(user, step, data = {}) {
@@ -37,11 +36,9 @@ async function setPage(user, page) {
 }
 
 async function clearSession(user) {
-    const sessions = await getSessions();
-
-    delete sessions[user];
-
-    await writeJSON(config.database.sessions, sessions);
+    return updateJSON(config.database.sessions, {}, sessions => {
+        delete sessions[user];
+    });
 }
 
 module.exports = {

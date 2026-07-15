@@ -1,6 +1,7 @@
 const session = require("../../services/sessionService");
 const orderService = require("../../services/orderService");
 const { formatRupiah } = require("../../utils/helper");
+const broadcast = require("../../commands/broadcast");
 
 module.exports = async (sock, jid, body, state) => {
 
@@ -67,19 +68,7 @@ module.exports = async (sock, jid, body, state) => {
     // =========================
     if (body === "3") {
 
-        await session.goto(jid, "ADMIN_BROADCAST_INPUT");
-
-        await sock.sendMessage(jid, {
-            text:
-`📢 *BROADCAST PROMO*
-
-Gunakan perintah:
-
-/broadcast all
-/broadcast poin 100
-/broadcast baru 30
-/broadcast inactive 30`
-        });
+        await broadcast(sock, jid);
 
         return true;
     }
@@ -104,8 +93,23 @@ Gunakan perintah:
     // =========================
     if (body === "5") {
 
+        await session.goto(
+            jid,
+            "ADMIN_IMPORT_EXCEL"
+        );
+
         return sock.sendMessage(jid, {
-            text: "📥 Silakan kirim file Excel untuk diimport."
+            text:
+`📥 *IMPORT EXCEL*
+
+Silakan kirim file Excel (.xlsx)
+
+Kolom yang didukung:
+
+• kode
+• nama
+• harga
+• stok`
         });
 
     }

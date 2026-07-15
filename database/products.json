@@ -31,7 +31,7 @@
     "id": "backdoorppandav2",
     "nama": "A backdoor panda v2",
     "harga": 60000,
-    "stok": 1,
+    "stok": 0,
     "kategori": "aksesoris"
   },
   {
@@ -514,7 +514,7 @@
     "id": "ctsonder",
     "nama": "ct sonder",
     "harga": 40000,
-    "stok": 10,
+    "stok": 9,
     "kategori": "catridge"
   },
   {
@@ -661,7 +661,7 @@
     "id": "komodosusu",
     "nama": "driptip 810 N",
     "harga": 40000,
-    "stok": 3,
+    "stok": 1,
     "kategori": "aksesoris"
   },
   {
@@ -843,7 +843,7 @@
     "id": "foomhoneydew",
     "nama": "foom icy honeydew 30ml",
     "harga": 110000,
-    "stok": 2,
+    "stok": 1,
     "kategori": "liquid"
   },
   {
@@ -5989,6 +5989,12 @@
     "nama": "zulu pod disposable",
     "harga": 50000,
     "stok": 2,
+    "kategori": "device"
+  },
+  {
+    "kode": "undefined",
+    "harga": null,
+    "stok": null,
     "kategori": "device"
   }
 ]

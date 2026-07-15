@@ -10,7 +10,9 @@ async function approve(sock, orderId) {
 
     if (order.status === "LUNAS") return true;
 
-    await productService.reduceStock(order.items);
+    const stockReduced = await productService.reduceStock(order.items);
+
+    if (!stockReduced) return false;
 
     await orderService.updateStatus(
         orderId,

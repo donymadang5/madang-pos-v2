@@ -7,66 +7,59 @@ const customerService = require("../services/customerService");
 
 module.exports = async (sock, jid, args = []) => {
 
-    if (!args[0]) return;
+    try {
 
-    const id = args[0];
+        if (!args[0]) return;
 
-    const order = await orderService.getOrder(id);
+        const id = args[0];
 
-    if (!order) {
+        const order = await orderService.getOrder(id);
 
-        return sock.sendMessage(jid, {
-            text: "❌ Order tidak ditemukan."
-        });
+        if (!order) {
+            return sock.sendMessage(jid, {
+                text: "❌ Order tidak ditemukan."
+            });
+        }
 
-    }
+        if (order.status === "LUNAS") {
+            return sock.sendMessage(jid, {
+                text: "✅ Order sudah lunas."
+            });
+        }
 
-    if (order.status === "LUNAS") {
+        const stockReduced =
+            await productService.reduceStock(order.items);
 
-        return sock.sendMessage(jid, {
-            text: "✅ Order sudah lunas."
-        });
+        if (!stockReduced) {
+            return sock.sendMessage(jid, {
+                text: "❌ Stok tidak mencukupi. Order tidak dapat di-approve."
+            });
+        }
 
-    }
+        await orderService.updateStatus(id, "LUNAS");
 
-    // Kurangi stok
-    await productService.reduceStock(order.items);
-
-    // Update status
-    await orderService.updateStatus(
-        id,
-        "LUNAS"
-    );
-
-    // Tambahkan transaksi customer
-    await customerService.updateOrder(
-        order.customer,
-        id,
-        order.total
-    );
-
-    const customer =
-        await customerService.getCustomer(
-            order.customer
+        await customerService.updateCustomerOrder(
+            order.customer,
+            order.total
         );
 
-    const poin =
-        Math.floor(
-            Number(order.total) / 10000
-        );
+        const customer =
+            await customerService.getCustomer(order.customer) || {
+                poin: 0
+            };
 
-    // Generate invoice
-    const pdf =
-        await invoiceService.generate({
+        const poin =
+            Math.floor(Number(order.total) / 10000);
 
-            ...order,
+        const pdf =
+            await invoiceService.generate({
+                ...order,
+                status: "LUNAS"
+            });
 
-            status: "LUNAS"
+        console.log("Invoice:", pdf);
 
-        });
-
-    let pesan =
-
+        const pesan =
 `✅ Pembayaran berhasil diverifikasi.
 
 ━━━━━━━━━━━━━━━━━━
@@ -89,33 +82,39 @@ Terima kasih telah berbelanja di *Madang Vape* ❤️
 
 Invoice dikirim di bawah ini.`;
 
-    // Kirim notifikasi customer
-    await sock.sendMessage(
-        order.customer,
-        {
+        await sock.sendMessage(order.customer, {
             text: pesan
+        });
+
+        if (pdf && fs.existsSync(pdf)) {
+
+            await sock.sendMessage(order.customer, {
+                document: fs.readFileSync(pdf),
+                mimetype: "application/pdf",
+                fileName: `${id}.pdf`
+            });
+
+        } else {
+
+            console.log("Invoice tidak ditemukan:", pdf);
+
         }
-    );
 
-    // Kirim invoice
-    await sock.sendMessage(
-        order.customer,
-        {
-            document: fs.readFileSync(pdf),
-            mimetype: "application/pdf",
-            fileName: `${id}.pdf`
-        }
-    );
-
-    // Notifikasi admin
-    await sock.sendMessage(jid, {
-
-        text:
-
+        await sock.sendMessage(jid, {
+            text:
 `✅ Order ${id} berhasil di-approve.
 
 ⭐ Customer mendapat ${poin} poin.`
+        });
 
-    });
+    } catch (err) {
+
+        console.log(err);
+
+        await sock.sendMessage(jid, {
+            text: `❌ ${err.message}`
+        });
+
+    }
 
 };

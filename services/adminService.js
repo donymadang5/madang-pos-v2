@@ -1,4 +1,4 @@
-const { readJSON, writeJSON } = require("../utils/helper");
+const { readJSON, updateJSON } = require("../utils/helper");
 
 const FILE = "./database/admins.json";
 
@@ -12,24 +12,20 @@ async function isAdmin(jid) {
 }
 
 async function addAdmin(jid) {
-    const admins = await getAdmins();
-
-    if (!admins.includes(jid)) {
-        admins.push(jid);
-        await writeJSON(FILE, admins);
-    }
-
-    return admins;
+    return updateJSON(FILE, [], admins => {
+        if (!admins.includes(jid)) {
+            admins.push(jid);
+        }
+        return admins;
+    });
 }
 
 async function removeAdmin(jid) {
-    const admins = await getAdmins();
-
-    const hasil = admins.filter(a => a !== jid);
-
-    await writeJSON(FILE, hasil);
-
-    return hasil;
+    return updateJSON(FILE, [], admins => {
+        const hasil = admins.filter(a => a !== jid);
+        admins.splice(0, admins.length, ...hasil);
+        return hasil;
+    });
 }
 
 module.exports = {

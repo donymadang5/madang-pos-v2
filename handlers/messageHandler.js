@@ -1,6 +1,7 @@
 const commandHandler = require("./commandHandler");
 const sessionHandler = require("./sessionHandler");
 const adminSessionHandler = require("./adminSessionHandler");
+const documentHandler = require("./documentHandler");
 
 const adminService = require("../services/adminService");
 
@@ -20,6 +21,22 @@ module.exports = async (sock, m) => {
 
     const from = msg.key.remoteJid;
 
+    // =========================
+    // HANDLE DOCUMENT
+    // =========================
+    if (msg.message?.documentMessage) {
+
+        const handled = await documentHandler(
+            sock,
+            msg,
+            from
+        );
+
+        if (handled) return;
+
+    }
+
+
     let body = "";
 
     if (msg.message?.conversation) {
@@ -30,7 +47,9 @@ module.exports = async (sock, m) => {
         body = msg.message.buttonsResponseMessage.selectedButtonId;
     } else if (msg.message?.listResponseMessage?.singleSelectReply?.selectedRowId) {
         body = msg.message.listResponseMessage.singleSelectReply.selectedRowId;
-    }
+    } else if (msg.message?.imageMessage?.caption) {
+    body = msg.message.imageMessage.caption;
+}
 
     if (!body) return;
 
@@ -62,10 +81,11 @@ module.exports = async (sock, m) => {
     if (await adminService.isAdmin(from)) {
 
         const handled = await adminSessionHandler(
-            sock,
-            from,
-            body
-        );
+    sock,
+    msg,
+    from,
+    body
+);
 
         if (handled) return;
     }

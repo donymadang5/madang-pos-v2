@@ -1,5 +1,5 @@
 const config = require("../config/config");
-const { readJSON, writeJSON } = require("../utils/helper");
+const { readJSON, updateJSON } = require("../utils/helper");
 
 async function getCarts() {
     try {
@@ -27,7 +27,7 @@ async function addItem(user, product, qty) {
     }
 
     try {
-        const carts = await getCarts();
+        return await updateJSON(config.database.carts, [], carts => {
 
         let cart = carts.find(c => c.user === user);
 
@@ -54,9 +54,8 @@ async function addItem(user, product, qty) {
             });
         }
 
-        await writeJSON(config.database.carts, carts);
-
         return cart;
+        });
 
     } catch (error) {
         console.error("Error in addItem:", error);
@@ -68,15 +67,13 @@ async function addItem(user, product, qty) {
 async function clearCart(user) {
 
     try {
-        const carts = await getCarts();
+        await updateJSON(config.database.carts, [], carts => {
+            const index = carts.findIndex(c => c.user === user);
 
-        const index = carts.findIndex(c => c.user === user);
-
-        if (index >= 0) {
-            carts.splice(index, 1);
-        }
-
-        await writeJSON(config.database.carts, carts);
+            if (index >= 0) {
+                carts.splice(index, 1);
+            }
+        });
 
     } catch (error) {
         console.error("Error in clearCart:", error);

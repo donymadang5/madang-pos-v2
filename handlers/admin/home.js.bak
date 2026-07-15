@@ -1,0 +1,156 @@
+const session = require("../../services/sessionService");
+const orderService = require("../../services/orderService");
+const { formatRupiah } = require("../../utils/helper");
+const broadcast = require("../../commands/broadcast");
+
+module.exports = async (sock, jid, body, state) => {
+
+    if (state.step !== "ADMIN_HOME") {
+        return false;
+    }
+
+    // =========================
+    // 1. VERIFIKASI PEMBAYARAN
+    // =========================
+    if (body === "1") {
+
+        const orders = await orderService.getWaitingVerification();
+
+        if (!orders.length) {
+            await sock.sendMessage(jid, {
+                text: "✅ Tidak ada pembayaran yang menunggu verifikasi."
+            });
+            return true;
+        }
+
+        let text = "🧾 *MENUNGGU VERIFIKASI*\n\n";
+
+        orders.forEach((order, i) => {
+            text += `${i + 1}. ${order.id}\n`;
+            text += `${formatRupiah(order.total)}\n\n`;
+        });
+
+        text += "Balas nomor untuk melihat detail pesanan.";
+
+        await session.goto(jid, "ADMIN_VERIFY_LIST", {
+            orders: orders.map(o => o.id)
+        });
+
+        await sock.sendMessage(jid, { text });
+
+        return true;
+    }
+
+    // =========================
+    // 2. CUSTOMER
+    // =========================
+    if (body === "2") {
+
+        await session.goto(jid, "ADMIN_CUSTOMER_HOME");
+
+        await sock.sendMessage(jid, {
+            text:
+`👥 *CUSTOMER MANAGER*
+
+1️⃣ Total Customer
+2️⃣ Cari Customer
+3️⃣ Top Customer
+4️⃣ Riwayat Customer
+
+0️⃣ Kembali`
+        });
+
+        return true;
+    }
+
+    // =========================
+    // 3. BROADCAST
+    // =========================
+    if (body === "3") {
+
+        await broadcast(sock, jid);
+
+        return true;
+    }
+
+    // =========================
+    // 4. STATISTIK
+    // =========================
+    if (body === "4") {
+
+        await session.goto(jid, "ADMIN_STATISTIC_HOME");
+
+        const statistic = require("./statistic");
+
+        return statistic(sock, jid, "", {
+            step: "ADMIN_STATISTIC_HOME"
+        });
+
+    }
+
+    // =========================
+    // 5. IMPORT
+    // =========================
+    if (body === "5") {
+
+        return sock.sendMessage(jid, {
+            text: "📥 Silakan kirim file Excel untuk diimport."
+        });
+
+    }
+
+    // =========================
+    // 6. EXPORT
+    // =========================
+    if (body === "6") {
+
+        return sock.sendMessage(jid, {
+            text: "📤 Menyiapkan file Excel..."
+        });
+
+    }
+
+    // =========================
+    // 7. PENGATURAN
+    // =========================
+    if (body === "7") {
+
+        await session.goto(jid, "ADMIN_SETTING");
+
+        return sock.sendMessage(jid, {
+            text:
+`⚙️ *PENGATURAN*
+
+1️⃣ Backup Database
+2️⃣ Restore Database
+3️⃣ Activity Log
+
+0️⃣ Kembali`
+        });
+
+    }
+
+    // =========================
+    // 8. VOUCHER
+    // =========================
+    if (body === "8") {
+
+        await session.goto(jid, "ADMIN_VOUCHER");
+
+        return sock.sendMessage(jid, {
+            text:
+`🎁 *KELOLA VOUCHER*
+
+1️⃣ Lihat Voucher
+2️⃣ Tambah Voucher
+3️⃣ Nonaktifkan Voucher
+4️⃣ Hapus Voucher
+
+0️⃣ Kembali`
+        });
+
+    }
+
+    return false;
+
+};

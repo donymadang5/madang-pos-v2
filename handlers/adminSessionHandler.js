@@ -9,7 +9,7 @@ const broadcast = require("./admin/broadcast");
 const setting = require("./admin/setting");
 const voucher = require("./admin/voucher");
 
-module.exports = async (sock, jid, body) => {
+module.exports = async (sock, msg, jid, body) => {
 
     const state = await session.getSession(jid);
 
@@ -37,7 +37,7 @@ module.exports = async (sock, jid, body) => {
         return true;
     }
 
-    if (await broadcast(sock, jid, body, state)) {
+    if (await broadcast(sock, msg, jid, body, state)) {
         return true;
     }
 

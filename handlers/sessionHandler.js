@@ -282,7 +282,7 @@ Subtotal : ${formatRupiah(subtotal)}
                 state.lastOrderId
             );
 
-            const result = await voucherService.validateVoucher(
+            const result = await voucherService.consumeVoucher(
                 text.toUpperCase(),
                 order.items,
                 state.subtotal

@@ -2,6 +2,7 @@ const cartService = require("../services/cartService");
 const orderService = require("../services/orderService");
 const customerService = require("../services/customerService");
 const session = require("../services/sessionService");
+const productService = require("../services/productService");
 const { formatRupiah } = require("../utils/helper");
 
 module.exports = async (sock, jid) => {
@@ -24,6 +25,14 @@ module.exports = async (sock, jid) => {
     const total = subtotal;
 
     try {
+
+        const stockAvailable = await productService.validateStock(cart.items);
+
+        if (!stockAvailable) {
+            return sock.sendMessage(jid, {
+                text: "❌ Stok produk tidak mencukupi. Silakan periksa keranjang Anda."
+            });
+        }
 
         await customerService.saveCustomer(jid);
 

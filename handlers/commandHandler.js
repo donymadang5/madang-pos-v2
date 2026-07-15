@@ -20,6 +20,25 @@ const activity = require("../commands/activity");
 const testButton = require("../test-button");
 
 const adminService = require("../services/adminService");
+const config = require("../config/config");
+
+function normalizePhone(value) {
+    let phone = String(value || "").replace(/\D/g, "");
+
+    if (phone.startsWith("0")) {
+        phone = "62" + phone.slice(1);
+    }
+
+    return phone;
+}
+
+function isConfiguredOwner(jid) {
+    const ownerPhone = normalizePhone(config.owner?.phone);
+    const senderPhone = normalizePhone(String(jid).split("@")[0]);
+
+    // Empty and placeholder configuration must never authorize bootstrap.
+    return /^62\d{8,13}$/.test(ownerPhone) && senderPhone === ownerPhone;
+}
 
 module.exports = async (sock, jid, body) => {
 
@@ -43,6 +62,12 @@ module.exports = async (sock, jid, body) => {
                     text: "❌ Admin sudah terdaftar."
                 });
 
+            }
+
+            if (!isConfiguredOwner(jid)) {
+                return sock.sendMessage(jid, {
+                    text: "❌ Registrasi admin pertama hanya dapat dilakukan oleh owner yang dikonfigurasi."
+                });
             }
 
             await adminService.addAdmin(jid);

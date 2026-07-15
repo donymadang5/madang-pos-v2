@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "user": "40914026266821@lid",
+    "items": [
+      {
+        "id": "redleg",
+        "nama": "legalized RED (NEW)",
+        "harga": 100000,
+        "stok": 2,
+        "kategori": "coil",
+        "qty": 1
+      }
+    ]
+  }
+]

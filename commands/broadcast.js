@@ -5,22 +5,33 @@ module.exports = async (sock, jid, args = []) => {
 
     if (!args.length) {
 
-        return sock.sendMessage(jid, {
-            text:
-`📢 *SMART BROADCAST*
+    await session.goto(jid, "ADMIN_BROADCAST_MENU");
 
-Penggunaan:
+    return sock.sendMessage(jid, {
+        text:
+`📢 *BROADCAST PROMO*
+━━━━━━━━━━━━━━━━━━
 
-/broadcast all
+Pilih target broadcast:
 
-/broadcast poin 100
+1️⃣ Semua Customer
 
-/broadcast baru 30
+2️⃣ Customer Baru
 
-/broadcast inactive 30`
-        });
+3️⃣ Customer Tidak Aktif
 
-    }
+4️⃣ Berdasarkan Poin
+
+5️⃣ Nomor Manual
+
+0️⃣ Kembali
+
+━━━━━━━━━━━━━━━━━━
+
+Balas angka menu.`
+    });
+
+}
 
     let customers = [];
 

@@ -1,21 +1,19 @@
 const config = require("../config/config");
-const { readJSON, writeJSON } = require("../utils/helper");
+const { readJSON, updateJSON } = require("../utils/helper");
 
 async function getPayments() {
     return await readJSON(config.database.payments);
 }
 
 async function savePayment(payment) {
-    const payments = await getPayments();
+    return updateJSON(config.database.payments, [], payments => {
+        payments.push({
+            ...payment,
+            createdAt: new Date().toISOString()
+        });
 
-    payments.push({
-        ...payment,
-        createdAt: new Date().toISOString()
+        return payment;
     });
-
-    await writeJSON(config.database.payments, payments);
-
-    return payment;
 }
 
 async function getPayment(orderId) {

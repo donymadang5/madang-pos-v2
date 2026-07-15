@@ -2,6 +2,7 @@ const config = require("../config/config");
 const {
     readJSON,
     writeJSON,
+    updateJSON,
     generateOrderId
 } = require("../utils/helper");
 
@@ -33,12 +34,9 @@ async function getHistoryByCustomer(customer) {
 }
 
 async function createOrder(customer, items, subtotal, option = {}) {
-
-    const orders = await getOrders();
-
-    const diskon = Number(option.diskon || 0);
-
-    const order = {
+    return updateJSON(config.database.orders, [], orders => {
+        const diskon = Number(option.diskon || 0);
+        const order = {
 
         id: generateOrderId(),
 
@@ -74,61 +72,46 @@ async function createOrder(customer, items, subtotal, option = {}) {
 
     };
 
-    orders.push(order);
-
-    await saveOrders(orders);
-
-    return order;
+        orders.push(order);
+        return order;
+    });
 
 }
 
 async function updateOrder(id, data) {
+    return updateJSON(config.database.orders, [], orders => {
+        const index = orders.findIndex(o => o.id === id);
+        if (index === -1) return false;
 
-    const orders = await getOrders();
+        orders[index] = {
+            ...orders[index],
+            ...data
+        };
 
-    const index = orders.findIndex(
-        o => o.id === id
-    );
-
-    if (index === -1) return false;
-
-    orders[index] = {
-        ...orders[index],
-        ...data
-    };
-
-    await saveOrders(orders);
-
-    return true;
+        return true;
+    });
 
 }
 
 async function updateStatus(id, status) {
+    return updateJSON(config.database.orders, [], orders => {
+        const index = orders.findIndex(o => o.id === id);
+        if (index === -1) return false;
 
-    const orders = await getOrders();
+        orders[index].status = status;
 
-    const index = orders.findIndex(
-        o => o.id === id
-    );
+        if (!orders[index].payment) {
+            orders[index].payment = {};
+        }
 
-    if (index === -1) return false;
+        orders[index].payment.status = status;
 
-    orders[index].status = status;
+        if (status === "LUNAS") {
+            orders[index].payment.paidAt = new Date().toISOString();
+        }
 
-    if (!orders[index].payment) {
-        orders[index].payment = {};
-    }
-
-    orders[index].payment.status = status;
-
-    if (status === "LUNAS") {
-        orders[index].payment.paidAt =
-            new Date().toISOString();
-    }
-
-    await saveOrders(orders);
-
-    return true;
+        return true;
+    });
 
 }
 

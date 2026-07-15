@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "kode": "DISKON10K",
+    "jenis": "nominal",
+    "nilai": 10000,
+    "kategori": "LIQUID,DEVICE",
+    "minimal": 100000,
+    "kuota": 10,
+    "mulai": "2026-07-14",
+    "selesai": "2026-08-1",
+    "aktif": true,
+    "dipakai": 0
+  }
+]

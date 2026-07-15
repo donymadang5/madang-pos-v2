@@ -1,7 +1,8 @@
 const config = require("../config/config");
 const {
     readJSON,
-    writeJSON
+    writeJSON,
+    updateJSON
 } = require("../utils/helper");
 
 async function getActivities() {
@@ -12,10 +13,8 @@ async function getActivities() {
 }
 
 async function add(type, message, data = {}) {
-
-    const logs = await getActivities();
-
-    logs.unshift({
+    return updateJSON(config.database.activity, [], logs => {
+        logs.unshift({
 
         id: Date.now(),
 
@@ -29,14 +28,10 @@ async function add(type, message, data = {}) {
 
     });
 
-    if (logs.length > 1000) {
-        logs.splice(1000);
-    }
-
-    await writeJSON(
-        config.database.activity,
-        logs
-    );
+        if (logs.length > 1000) {
+            logs.splice(1000);
+        }
+    });
 
 }
 

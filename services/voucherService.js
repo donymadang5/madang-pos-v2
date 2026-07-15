@@ -1,7 +1,8 @@
 const config = require("../config/config");
 const {
     readJSON,
-    writeJSON
+    writeJSON,
+    updateJSON
 } = require("../utils/helper");
 
 async function getVouchers() {
@@ -22,62 +23,40 @@ async function getVoucher(kode) {
 }
 
 async function createVoucher(voucher) {
-    const vouchers = await getVouchers();
-
-    vouchers.push({
-        aktif: true,
-        dipakai: 0,
-        ...voucher
+    return updateJSON(config.database.vouchers, [], vouchers => {
+        vouchers.push({
+            aktif: true,
+            dipakai: 0,
+            ...voucher
+        });
     });
-
-    await saveVouchers(vouchers);
 }
 
 async function disableVoucher(kode) {
-    const vouchers = await getVouchers();
-
-    const v = vouchers.find(x =>
-        x.kode.toLowerCase() ===
-        kode.toLowerCase()
-    );
-
-    if (!v) return false;
-
-    v.aktif = false;
-
-    await saveVouchers(vouchers);
-
-    return true;
+    return updateJSON(config.database.vouchers, [], vouchers => {
+        const v = vouchers.find(x => String(x.kode).toLowerCase() === String(kode).toLowerCase());
+        if (!v) return false;
+        v.aktif = false;
+        return true;
+    });
 }
 
 async function deleteVoucher(kode) {
-    const vouchers = await getVouchers();
-
-    const hasil = vouchers.filter(v =>
-        v.kode.toLowerCase() !==
-        kode.toLowerCase()
-    );
-
-    await saveVouchers(hasil);
-
-    return true;
+    return updateJSON(config.database.vouchers, [], vouchers => {
+        const hasil = vouchers.filter(v => String(v.kode).toLowerCase() !== String(kode).toLowerCase());
+        vouchers.splice(0, vouchers.length, ...hasil);
+        return true;
+    });
 }
 
 async function useVoucher(kode) {
-    const vouchers = await getVouchers();
+    return updateJSON(config.database.vouchers, [], vouchers => {
+        const v = vouchers.find(x => String(x.kode).toLowerCase() === String(kode).toLowerCase());
+        if (!v) return false;
 
-    const v = vouchers.find(x =>
-        x.kode.toLowerCase() ===
-        kode.toLowerCase()
-    );
-
-    if (!v) return false;
-
-    v.dipakai = Number(v.dipakai || 0) + 1;
-
-    await saveVouchers(vouchers);
-
-    return true;
+        v.dipakai = Number(v.dipakai || 0) + 1;
+        return true;
+    });
 }
 
 module.exports = {
@@ -90,9 +69,7 @@ module.exports = {
     useVoucher
 };
 
-async function validateVoucher(kode, items, subtotal) {
-
-    const voucher = await getVoucher(kode);
+function validateVoucherData(voucher, items, subtotal) {
 
     if (!voucher) {
         return {
@@ -190,57 +167,55 @@ async function validateVoucher(kode, items, subtotal) {
     };
 }
 
+async function validateVoucher(kode, items, subtotal) {
+    const voucher = await getVoucher(kode);
+    return validateVoucherData(voucher, items, subtotal);
+}
+
+async function consumeVoucher(kode, items, subtotal) {
+    return updateJSON(config.database.vouchers, [], vouchers => {
+        const voucher = vouchers.find(v =>
+            String(v.kode).toLowerCase() === String(kode).toLowerCase()
+        );
+        const result = validateVoucherData(voucher, items, subtotal);
+
+        if (!result.ok) return result;
+
+        voucher.dipakai = Number(voucher.dipakai || 0) + 1;
+        return result;
+    });
+}
+
 module.exports.validateVoucher = validateVoucher;
+module.exports.consumeVoucher = consumeVoucher;
 
 
 async function addVoucher(voucher) {
-
-    const vouchers = await getVouchers();
-
-    const index = vouchers.findIndex(
-        v => String(v.kode).toUpperCase() === String(voucher.kode).toUpperCase()
-    );
-
-    if (index >= 0) {
-        vouchers[index] = {
-            ...vouchers[index],
-            ...voucher
-        };
-    } else {
-        vouchers.push(voucher);
-    }
-
-    await saveVouchers(vouchers);
-
-    return voucher;
+    return updateJSON(config.database.vouchers, [], vouchers => {
+        const index = vouchers.findIndex(v => String(v.kode).toUpperCase() === String(voucher.kode).toUpperCase());
+        if (index >= 0) {
+            vouchers[index] = { ...vouchers[index], ...voucher };
+        } else {
+            vouchers.push(voucher);
+        }
+        return voucher;
+    });
 }
 
 async function removeVoucher(kode) {
-
-    const vouchers = await getVouchers();
-
-    const data = vouchers.filter(
-        v => String(v.kode).toUpperCase() !== String(kode).toUpperCase()
-    );
-
-    await saveVouchers(data);
+    return updateJSON(config.database.vouchers, [], vouchers => {
+        const data = vouchers.filter(v => String(v.kode).toUpperCase() !== String(kode).toUpperCase());
+        vouchers.splice(0, vouchers.length, ...data);
+    });
 }
 
 async function setVoucherActive(kode, aktif) {
-
-    const vouchers = await getVouchers();
-
-    const voucher = vouchers.find(
-        v => String(v.kode).toUpperCase() === String(kode).toUpperCase()
-    );
-
-    if (!voucher) return false;
-
-    voucher.aktif = aktif;
-
-    await saveVouchers(vouchers);
-
-    return true;
+    return updateJSON(config.database.vouchers, [], vouchers => {
+        const voucher = vouchers.find(v => String(v.kode).toUpperCase() === String(kode).toUpperCase());
+        if (!voucher) return false;
+        voucher.aktif = aktif;
+        return true;
+    });
 }
 
 module.exports.addVoucher = addVoucher;
@@ -249,26 +224,13 @@ module.exports.setVoucherActive = setVoucherActive;
 
 
 async function updateVoucher(kode, data) {
-
-    const vouchers = await getVouchers();
-
-    const voucher = vouchers.find(
-        v =>
-            String(v.kode).toUpperCase() ===
-            String(kode).toUpperCase()
-    );
-
-    if (!voucher) {
-        return false;
-    }
-
-    Object.assign(voucher, data);
-
-    await saveVouchers(vouchers);
-
-    return true;
+    return updateJSON(config.database.vouchers, [], vouchers => {
+        const voucher = vouchers.find(v => String(v.kode).toUpperCase() === String(kode).toUpperCase());
+        if (!voucher) return false;
+        Object.assign(voucher, data);
+        return true;
+    });
 
 }
 
 module.exports.updateVoucher = updateVoucher;
-

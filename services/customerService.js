@@ -1,7 +1,8 @@
 const config = require("../config/config");
 const {
     readJSON,
-    writeJSON
+    writeJSON,
+    updateJSON
 } = require("../utils/helper");
 
 async function getCustomers() {
@@ -19,12 +20,8 @@ async function getCustomer(jid) {
 }
 
 async function saveCustomer(jid) {
-
-    const customers = await getCustomers();
-
-    let customer = customers.find(
-        c => c.jid === jid
-    );
+    return updateJSON(config.database.customers, [], customers => {
+        let customer = customers.find(c => c.jid === jid);
 
     if (!customer) {
 
@@ -45,18 +42,13 @@ async function saveCustomer(jid) {
         customers.push(customer);
     }
 
-    await saveCustomers(customers);
-
-    return customer;
+        return customer;
+    });
 }
 
 async function registerCustomer(jid, nama, phone) {
-
-    const customers = await getCustomers();
-
-    let customer = customers.find(
-        c => c.jid === jid
-    );
+    return updateJSON(config.database.customers, [], customers => {
+        let customer = customers.find(c => c.jid === jid);
 
     if (!customer) {
 
@@ -78,9 +70,8 @@ async function registerCustomer(jid, nama, phone) {
     customer.nama = String(nama).trim();
     customer.phone = String(phone).trim();
 
-    await saveCustomers(customers);
-
-    return customer;
+        return customer;
+    });
 }
 
 async function isRegistered(jid) {
@@ -96,14 +87,9 @@ async function isRegistered(jid) {
 }
 
 async function updateCustomerOrder(jid, total) {
-
-    const customers = await getCustomers();
-
-    const customer = customers.find(
-        c => c.jid === jid
-    );
-
-    if (!customer) return;
+    return updateJSON(config.database.customers, [], customers => {
+        const customer = customers.find(c => c.jid === jid);
+        if (!customer) return false;
 
     customer.lastOrder = new Date().toISOString();
     customer.totalOrder =
@@ -119,7 +105,8 @@ async function updateCustomerOrder(jid, total) {
     customer.totalPoin =
         Number(customer.totalPoin || 0) + poin;
 
-    await saveCustomers(customers);
+        return true;
+    });
 }
 
 async function searchCustomer(keyword) {
